@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Gaze and motion information fusion for human intention inference analysis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Structured Techniques for Algorithmic Robotics (STAR) Lab" href="http://localhost:4000/feed.xml">
+
+  	<!-- Customized Bootstrap + Font Awesome + Solarized -->
+  	<link href=http://localhost:4000/css/style.css rel="stylesheet" media="screen">
+	
+	<!-- Typekit Font -->
+	<link rel="stylesheet" href="https://use.typekit.net/jxz2ayk.css">
+	
+	<!-- jQuery -->
+	<script src=http://localhost:4000/js/jquery.min.js></script>
+	
+	<!-- Bootstrap -->
+	<script src=http://localhost:4000/js/bootstrap.min.js></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href=http://localhost:4000/images/favicon.png>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbarlogo" href=http://localhost:4000/>
+					<img class="align-top ml-0 mr-1" src=http://localhost:4000/images/logo-navbar-transparent.png>
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href=http://localhost:4000/team/>Team</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href=http://localhost:4000/papers/>Papers</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container mt-4">
+	
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<img width=285 class="pull-left pad-right media-object d-none d-sm-block" src="http://localhost:4000/images/papers/ravichandar-gmmie.png">
+		<img width=500 class="float-left pad-right d-block d-sm-none" src="http://localhost:4000/images/papers/ravichandar-gmmie.png">
+		
+		<div class="titlebox">
+			<div class="head">
+				Gaze and motion information fusion for human intention inference analysis
+			</div>
+			<p>
+			<div class="smallhead">
+				Harish Ravichandar, Avnish Kumar, Ashwin Dani
+				<p style="font-weight: bold;"> International Journal of Intelligent Robotics and Applications (IJIRA), 2018.</p></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			<div class="smallhead">
+				PDF
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="https://link.springer.com/article/10.1007/s41315-018-0051-0"> Ravichandar et al. IJIRA 2018.</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="note">
+			<h2 id="abstract">Abstract</h2>
+
+<p>An algorithm, named gaze-based multiple model intention estimator (G-MMIE), is presented for early prediction of the goal location (intention) of human reaching actions. The trajectories of the arm motion for reaching tasks are modeled by using an autonomous dynamical system with contracting behavior towards the goal location. To represent the dynamics of human arm reaching motion, a neural network (NN) is used. The parameters of the NN are learned under constraints derived based on contraction analysis. The constraints ensure that the trajectories of the dynamical system converge to a single equilibrium point. In order to use the motion model learned from a few demonstrations in new scenarios with multiple candidate goal locations, an interacting multiple-model (IMM) framework is used. For a given reaching motion, multiple models are obtained by translating the equilibrium point of the contracting system to different known candidate locations. Hence, each model corresponds to the reaching motion that ends at the respective candidate location. Further, since humans tend to look toward the location they are reaching for, prior probabilities of the goal locations are calculated based on the information about the human’s gaze. The posterior probabilities of the models are calculated through interacting model matched filtering. The candidate location with the highest posterior probability is chosen to be the estimate of the true goal location. Detailed quantitative evaluations of the G-MMIE algorithm on two different datasets involving 15 subjects, and comparisons with state-of-the-art intention inference algorithms are presented.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

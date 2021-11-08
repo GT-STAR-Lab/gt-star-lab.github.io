@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>GRSTAPS &#58; Graphically Recursive Simultaneous Task Allocation, Planning, and Scheduling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Structured Techniques for Algorithmic Robotics (STAR) Lab" href="http://localhost:4000/feed.xml">
+
+  	<!-- Customized Bootstrap + Font Awesome + Solarized -->
+  	<link href=http://localhost:4000/css/style.css rel="stylesheet" media="screen">
+	
+	<!-- Typekit Font -->
+	<link rel="stylesheet" href="https://use.typekit.net/jxz2ayk.css">
+	
+	<!-- jQuery -->
+	<script src=http://localhost:4000/js/jquery.min.js></script>
+	
+	<!-- Bootstrap -->
+	<script src=http://localhost:4000/js/bootstrap.min.js></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href=http://localhost:4000/images/favicon.png>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbarlogo" href=http://localhost:4000/>
+					<img class="align-top ml-0 mr-1" src=http://localhost:4000/images/logo-navbar-transparent.png>
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href=http://localhost:4000/team/>Team</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href=http://localhost:4000/papers/>Papers</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container mt-4">
+	
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<img width=285 class="pull-left pad-right media-object d-none d-sm-block" src="http://localhost:4000/images/papers/messing-grstaps.png">
+		<img width=500 class="float-left pad-right d-block d-sm-none" src="http://localhost:4000/images/papers/messing-grstaps.png">
+		
+		<div class="titlebox">
+			<div class="head">
+				GRSTAPS &#58; Graphically Recursive Simultaneous Task Allocation, Planning, and Scheduling
+			</div>
+			<p>
+			<div class="smallhead">
+				Andrew Messing*, Glen Neville*, Seth Hutchinson, Sonia Chernova, Harish Ravichandar<br />(* equal contribution)
+				<p style="font-weight: bold;"> International Journal of Robotics Research (IJRR), 2021.</p></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			<div class="smallhead">
+				PDF
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="http://localhost:4000/coming%20soon"> Messing et al. IJRR 2021.</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+			<div class="smallhead">
+				arXiv
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="https://arxiv.org/abs/coming soon">coming soon</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="note">
+			<h2 id="abstract">Abstract</h2>
+
+<p>Effective deployment of multi-robot teams requires solving several interdependent problems at varying levels of abstraction. Specifically, heterogeneous multi-robot systems must answer four important questions: <em>what</em> (task planning), <em>how</em> (motion planning), <em>who</em> (task allocation), and <em>when</em> (scheduling). While there are rich bodies of work dedicated to various combinations of these questions, a fully integrated treatment of all four questions lies beyond the scope of the current literature, which lacks even a formal description of the complete problem. In this paper, we address this absence, first by formalizing this class of multi-robot problems under the banner <em>Simultaneous Task Allocation and Planning with Spatiotemporal Constraints (STAP-STC)</em>, and then by proposing a solution that we call <em>Graphically-recursive simultaneous task allocation, planning, and scheduling (GRSTAPS)</em>. GRSTAPS interleaves task planning, task allocation, scheduling, and motion planning, performing a multi-layer search while effectively sharing information among system modules. In addition to providing a unified solution to STAP-STC problems, GRSTAPS includes individual innovations both in task planning and task allocation. At the task planning level, our interleaved approach allows the planner to abstract away which agents will perform a task using an approach that we refer to as <em>agent-agnostic planning</em>. At the task allocation level, we contribute a search-based algorithm that can simultaneously satisfy planning constraints and task requirements while optimizing the associated schedule. We demonstrate the efficacy of GRSTAPS using detailed ablative and comparative experiments in a simulated emergency-response domain. Results of these experiments conclusively demonstrate that GRSTAPS outperforms both ablative baselines and state-of-the-art temporal planners in terms of computation time, solution quality, and problem coverage.</p>
+
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

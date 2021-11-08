@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Learning position and orientation dynamics from demonstrations via contraction analysis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Structured Techniques for Algorithmic Robotics (STAR) Lab" href="http://localhost:4000/feed.xml">
+
+  	<!-- Customized Bootstrap + Font Awesome + Solarized -->
+  	<link href=http://localhost:4000/css/style.css rel="stylesheet" media="screen">
+	
+	<!-- Typekit Font -->
+	<link rel="stylesheet" href="https://use.typekit.net/jxz2ayk.css">
+	
+	<!-- jQuery -->
+	<script src=http://localhost:4000/js/jquery.min.js></script>
+	
+	<!-- Bootstrap -->
+	<script src=http://localhost:4000/js/bootstrap.min.js></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href=http://localhost:4000/images/favicon.png>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbarlogo" href=http://localhost:4000/>
+					<img class="align-top ml-0 mr-1" src=http://localhost:4000/images/logo-navbar-transparent.png>
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href=http://localhost:4000/team/>Team</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href=http://localhost:4000/papers/>Papers</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container mt-4">
+	
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<img width=285 class="pull-left pad-right media-object d-none d-sm-block" src="http://localhost:4000/images/papers/ravichandar-cdsp.png">
+		<img width=500 class="float-left pad-right d-block d-sm-none" src="http://localhost:4000/images/papers/ravichandar-cdsp.png">
+		
+		<div class="titlebox">
+			<div class="head">
+				Learning position and orientation dynamics from demonstrations via contraction analysis
+			</div>
+			<p>
+			<div class="smallhead">
+				Harish Ravichandar, Ashwin Dani
+				<p style="font-weight: bold;"> Autonomous Robots (AuRo), 2019.</p></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			<div class="smallhead">
+				PDF
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="https://link.springer.com/article/10.1007/s10514-018-9758-x"> Ravichandar et al. AuRo 2019.</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="note">
+			<h2 id="abstract">Abstract</h2>
+
+<p>This paper presents a unified framework of model-learning algorithms, called contracting dynamical system primitives (CDSP), that can be used to learn pose (i.e., position and orientation) dynamics of point-to-point motions from demonstrations. The position and the orientation (represented using quaternions) trajectories are modeled as two separate autonomous nonlinear dynamical systems. The special constraints of the S3S3 manifold are enforced in the formulation of the system that models the orientation dynamics. To capture the variability in the demonstrations, the dynamical systems are estimated using Gaussian mixture models (GMMs). The parameters of the GMMs are learned subject to the constraints derived using partial contraction analysis. The learned models’ reproductions are shown to accurately reproduce the demonstrations and are guaranteed to converge to the desired goal location. Experimental results illustrate the CDSP algorithm’s ability to accurately learn position and orientation dynamics and the utility of the learned models in path generation for a Baxter robot arm. The CDSP algorithm is evaluated on a publicly available dataset and a synthetic dataset, and is shown to have the lowest and comparable average reproduction errors when compared to state-of-the-art imitation learning algorithms.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>
