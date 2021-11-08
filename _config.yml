@@ -1,6 +1,6 @@
 name: Structured Techniques for Algorithmic Robotics (STAR) Lab
 description: Updates from the STAR lab at Georgia Tech
-url: https://gt-star-lab.github.io/
+url: https://gt-star-lab.github.io
 baseurl: ""
 
 markdown: kramdown
