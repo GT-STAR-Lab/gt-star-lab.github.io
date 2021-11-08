@@ -1,0 +1,93 @@
+---
+layout: default
+title: STAR lab
+categories:
+ - home
+---
+
+
+<div class="container">
+    <div class="col-md-7 px-0 rounded mx-auto d-block">
+        <img src={{ "/images/logo-long-transparent.png" | absolute_url }}>
+    </div>
+</div>
+
+
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="smallhead">
+      <p>
+        The Structured Techniques for Algorithmic Robotics (STAR) Lab  at <a class="off" href="http://www.gatech.edu/">Georgia Tech</a>, directed by <a href={{"/team/harish-ravichandar/" | absolute_url}}>Harish Ravichandar</a>, develops structured algorithms that help collaborative robots learn to reliably operate in complex environments, while leveraging and enhancing their interactions with humans. We study three distinct, yet connected, areas: <b>robot learning</b>, <b>human-robot interaction</b>, and <b>multi-agent coordination</b>. The lab is affliated with the <a class="off" href="http://robotics.gatech.edu/">Institute for Intelligent Robots and Machines (IRIM)</a>.
+      </p>
+
+<div class="bigspacer"></div>
+
+      <p>
+	<u>Want to get involved?</u>: We are looking to recruit both graduate and undergraduate students to work on exciting projects in robot learning, human-robot interaction, and multi-agent systems. If you are interested, we request that you take the time to read <a href="https://drive.google.com/file/d/1vJHpxNPJXnYjleUCpCwxsa9DF3ZNQQgZ/view?usp=sharing">Harish's research statement</a> and some of <a href={{ "/papers/" | absolute_url }}>our papers</a> to get a better sense of our research interests before contacting us. You can also watch Harish's recent short talk that provides a high-level overview of our research (see below). When you reach out, please share what specific areas or research questions excite you and why you think the STAR lab is the right place for you.
+      </p>
+		</div>
+	</div>
+</div>
+
+<center>
+	<video controls width=60% align=center>
+
+   		<source src="https://smartech.gatech.edu/bitstream/handle/1853/65356/ravichandar.mp4?sequence=1&isAllowed=y">
+
+    		Sorry, your browser doesn't support embedded videos.
+	</video>
+</center>
+
+
+<div class="note">
+	<p style="text-align:center">
+		<i>A recent short (~15 mins) talk that provides a very high-level overview of our research. You can also find it <a href="https://smartech.gatech.edu/bitstream/handle/1853/65356/ravichandar_videostream.html?sequence=2&isAllowed=y">here</a>.</i>
+	</p>
+
+</div>
+
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			<a class="off" href={{ "/papers/" | absolute_url }}>Recent papers</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for paper in site.categories.papers limit:4 %}
+	<div class="col-lg-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ paper.url | absolute_url }}">
+				{{ paper.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="note">
+				{{ paper.ref }}
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ paper.date | date: "%-d %b %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="spacer"></div>
+
