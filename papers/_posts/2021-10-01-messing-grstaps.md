@@ -6,8 +6,7 @@ authors: Andrew Messing*, Glen Neville*, Seth Hutchinson, Sonia Chernova, Harish
 year: 2021
 ref: Messing et al. IJRR 2021.
 journal: "International Journal of Robotics Research (IJRR)"
-pdf: coming soon
-arxiv: coming soon
+pdf: https://journals.sagepub.com/doi/full/10.1177/02783649211052066
 ---
 
 ## Abstract
