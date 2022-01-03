@@ -1,10 +1,10 @@
 ---
 layout: member
-title: David Pierce Walker-Howell
+title: Pierce Howell
 level: grad
 position: PhD Student
 image: /images/team/david-pierce-walker-howell.png
-github: PierceATronics
+github: piercehowell
 ---
 
 
