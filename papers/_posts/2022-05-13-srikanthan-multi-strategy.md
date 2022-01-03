@@ -3,8 +3,8 @@ layout: paper
 title: Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation
 image: /images/papers/srikanthan-multi-strategy.png
 authors: Anusha Srikanthan, Harish Ravichandar
-year: 2020
-ref: Ravichandar et al. JAAMAS 2020.
+year: 2022
+ref: Srikanthan and Ravichandar, AAMAS 2022.
 journal: "Autonomous Agents and Multi-Agent Systems (AAMAS) - Extended Abstract"
 arxiv: 2108.02733
 github: GT-STAR-Lab/Resource-Aware-Generalization
