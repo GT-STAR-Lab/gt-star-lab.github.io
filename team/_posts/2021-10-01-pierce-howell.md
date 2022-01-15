@@ -3,7 +3,7 @@ layout: member
 title: Pierce Howell
 level: grad
 position: PhD Student
-image: /images/team/david-pierce-walker-howell.png
+image: /images/team/pierce-howell.png
 github: piercehowell
 ---
 
