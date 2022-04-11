@@ -4,7 +4,7 @@ title: Resilient Coalition Formation in Heterogeneous Teams via Imitation Learni
 image: /images/papers/srikanthan-multi-strategy.png
 authors: Anusha Srikanthan, Siddharth Mayya, Harish Ravichandar, Vijay Kumar <br /> [Excellent Paper Award]
 year: 2021
-ref: Srikanthan et al., IROS Workshop 2022.
+ref: Srikanthan et al., IROS Workshop 2021.
 journal: "Workshop on Cognitive and Social Aspects of Human Multi-Robot Interaction, IROS"
 pdf: https://drive.google.com/file/d/1bK_v0AgyuztT5srPErTCbXqJhkjg9bLb/view
 ---
