@@ -2,9 +2,9 @@
 layout: paper
 title: Evaluating the Effectiveness of Corrective Demonstrations and a Low-Cost Sensor for Dexterous Manipulation
 image: /images/papers/jain-dexterous-manip-corrective-demos.jpg
-authors: Abhineet Jain, Jack Kolb, J.M. Abbess IV, Harish Ravichandar
+authors: Abhineet Jain*, Jack Kolb*, J.M. Abbess IV, Harish Ravichandar<br />(* equal contribution)
 year: 2022
-ref: Abhineet et al., MLHRC WS, HRI 2022.
+ref: Jain et al., MLHRC WS, HRI 2022.
 journal: "Machine Learning in Human-Robot Collaboration (MLHRC) Workshop, ACM/IEEE International Conference on Human-Robot Interaction (HRI)"
 arxiv: 2204.07631
 github: GT-STAR-Lab/corrective-demos-dexterous-manipulation
