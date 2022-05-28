@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Evaluating the Effectiveness of Corrective Demonstrations and a Low-Cost Sensor for Dexterous Manipulation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Structured Techniques for Algorithmic Robotics (STAR) Lab" href="http://localhost:4000/feed.xml">
+
+  	<!-- Customized Bootstrap + Font Awesome + Solarized -->
+  	<link href=http://localhost:4000/css/style.css rel="stylesheet" media="screen">
+	
+	<!-- Typekit Font -->
+	<link rel="stylesheet" href="https://use.typekit.net/jxz2ayk.css">
+	
+	<!-- jQuery -->
+	<script src=http://localhost:4000/js/jquery.min.js></script>
+	
+	<!-- Bootstrap -->
+	<script src=http://localhost:4000/js/bootstrap.min.js></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href=http://localhost:4000/images/favicon.png>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbarlogo" href=http://localhost:4000/>
+					<img class="align-top ml-0 mr-1" src=http://localhost:4000/images/logo-navbar-transparent.png>
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href=http://localhost:4000/team/>Team</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href=http://localhost:4000/papers/>Papers</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+	<div class="container mt-4">
+	
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<img width=285 class="pull-left pad-right media-object d-none d-sm-block" src="http://localhost:4000/images/papers/jain-dexterous-manip-corrective-demos.jpg">
+		<img width=500 class="float-left pad-right d-block d-sm-none" src="http://localhost:4000/images/papers/jain-dexterous-manip-corrective-demos.jpg">
+		
+		<div class="titlebox">
+			<div class="head">
+				Evaluating the Effectiveness of Corrective Demonstrations and a Low-Cost Sensor for Dexterous Manipulation
+			</div>
+			<p>
+			<div class="smallhead">
+				Abhineet Jain*, Jack Kolb*, J.M. Abbess IV, Harish Ravichandar<br />(* equal contribution)
+				<p style="font-weight: bold;"> Machine Learning in Human-Robot Collaboration (MLHRC) Workshop, ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2022.</p></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			
+			
+			<div class="smallhead">
+				arXiv
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="https://arxiv.org/abs/2204.07631">2204.07631</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			<div class="smallhead">
+				GitHub
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="http://github.com/GT-STAR-Lab/corrective-demos-dexterous-manipulation">GT-STAR-Lab/corrective-demos-dexterous-manipulation</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="note">
+			<h2 id="abstract">Abstract</h2>
+
+<p>Imitation learning is a promising approach to help robots acquire dexterous manipulation capabilities without the need for a carefully-designed reward or a significant computational effort. However, existing imitation learning approaches require sophisticated data collection infrastructure and struggle to generalize beyond the training distribution. One way to address this limitation is to gather additional data that better represents the full operating conditions. In this work, we investigate characteristics of such additional demonstrations and their impact on performance. Specifically, we study the effects of <em>corrective</em> and <em>randomly-sampled</em> additional demonstrations on learning a policy that guides a five-fingered robot hand through a pick-and-place task. Our results suggest that corrective demonstrations considerably outperform randomly-sampled demonstrations, when the proportion of additional demonstrations sampled from the full task distribution is larger than the number of original demonstrations sampled from a restrictive training distribution. Conversely, when the number of original demonstrations are higher than that of additional demonstrations, we find no significant differences between corrective and randomly-sampled additional demonstrations. These results provide insights into the inherent trade-off between the effort required to collect corrective demonstrations and their relative benefits over randomly-sampled demonstrations. Additionally, we show that inexpensive vision-based sensors, such as LeapMotion, can be used to dramatically reduce the cost of providing demonstrations for dexterous manipulation tasks. Our code is available <a href="https://github.com/GT-STAR-Lab/corrective-demos-dexterous-manipulation">here</a>.</p>
+
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

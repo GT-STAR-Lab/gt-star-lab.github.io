@@ -10,7 +10,7 @@ For a more comprehensive list, please check out <a href="https://scholar.google.
 </div>
 
 <div class="note">
-Open-source code associated with publications are made available in our lab's <a href="https://github.com/GT-STAR-Lab">Github profile</a>.
+You can find open-source code associated with the papers below in our lab's <a href="https://github.com/GT-STAR-Lab">Github profile</a>.
 </div>
 
 {% for paper in site.categories.papers %}
@@ -26,18 +26,13 @@ Open-source code associated with publications are made available in our lab's <a
 <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />    </div>
   </div>
   <div class="row">
-  {% elsif this_year != prev_year and this_year > "2017" %}
+  {% elsif this_year != prev_year %}
     {% assign counter = 0 %}
   </div>
   <div class="row">
     <div class="col-md-12">
-      {% if this_year != "2018" %}
       <h1>{{ this_year }}</h1>
-      {% else %}
-      <h1>2018 and earlier</h1>
-      {% endif %}
       <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
-
     </div>
   </div>
   <div class="row">

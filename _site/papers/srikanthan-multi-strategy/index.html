@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Human Intention-Driven Learning Control for Trajectory Synchronization in Human-Robot Collaborative Tasks</title>
+	<title>Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- RSS feed -->
@@ -61,17 +61,17 @@
 	<div class="row">
 	<div class="col-lg-12">
 		
-		<img width=285 class="pull-left pad-right media-object d-none d-sm-block" src="http://localhost:4000/images/papers/ravichandar-intention-traj-sync.png">
-		<img width=500 class="float-left pad-right d-block d-sm-none" src="http://localhost:4000/images/papers/ravichandar-intention-traj-sync.png">
+		<img width=285 class="pull-left pad-right media-object d-none d-sm-block" src="http://localhost:4000/images/papers/srikanthan-multi-strategy.png">
+		<img width=500 class="float-left pad-right d-block d-sm-none" src="http://localhost:4000/images/papers/srikanthan-multi-strategy.png">
 		
 		<div class="titlebox">
 			<div class="head">
-				Human Intention-Driven Learning Control for Trajectory Synchronization in Human-Robot Collaborative Tasks
+				Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation
 			</div>
 			<p>
 			<div class="smallhead">
-				Harish Ravichandar, Daniel Trombetta, Ashwin Dani
-				<p style="font-weight: bold;"> IFAC Conference on Cyber-Physical and Human Systems (CPHS), 2018.</p></p>
+				Anusha Srikanthan, Harish Ravichandar
+				<p style="font-weight: bold;"> Autonomous Agents and Multi-Agent Systems (AAMAS) - Extended Abstract, 2022.</p></p>
 			</div>
 		</div>
 	</div>
@@ -84,18 +84,28 @@
 		<div class="bigspacer"></div>
 		<div class="glyphbox note">
 			
+			
+			
 			<div class="smallhead">
-				PDF
+				arXiv
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="https://www.sciencedirect.com/science/article/pii/S2405896319300011"> Ravichandar et al. IFAC CPHS 2018.</a>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="https://arxiv.org/abs/2108.02733">2108.02733</a>
 			</div>
 			<div class="bigspacer"></div>
 			
 			
-			
+			<div class="smallhead">
+				GitHub
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="http://github.com/GT-STAR-Lab/Resource-Aware-Generalization">GT-STAR-Lab/Resource-Aware-Generalization</a>
+			</div>
+			<div class="bigspacer"></div>
 			
 		</div>
 	</div>
@@ -103,7 +113,7 @@
 		<div class="note">
 			<h2 id="abstract">Abstract</h2>
 
-<p>For assistive robots to integrate seamlessly into human environments, they are required to understand the intentions of their human partners, and adapt their motion plans accordingly. In this paper, an estimator-controller method is presented to estimate the dynamic motion of the human’s hand and the motion intent, and to learn robot control gains for synchronizing the robot end-effector motion with the human’s hand motion. For human intention estimation, a multiple model estimation framework that switches between multiple nonlinear human motion models is used. An adaptive controller is developed for a robot to track the human’s motion. The controller gains are learned by using data collected by actually performing a collaborative motion task where a human and a robot are collectively moving an object. A controller stability analysis is provided which takes the uncertainty in the human motion estimation in consideration, yielding an UUB bound based on the estimated human motion uncertainty. A case study of the human and robot moving an object is discussed.</p>
+<p>Existing approaches to coalition formation often assume that requirements associated with tasks are precisely specified by the human operator. However, prior work has demonstrated that humans, while extremely adept at solving complex problems, struggle to explicitly state their solution strategy. In this work, we propose a framework to learn implicit task requirements directly from expert demonstrations of coalition formation. We also account for the fact that demonstrators may utilize different, equally-valid solutions to the same task. Essentially, we contribute a framework to model and infer such heterogeneous strategies to coalition formation. Next, we develop a resource-aware approach to generalize the inferred strategies to new teams without requiring additional training. To this end, we formulate and solve a constrained optimization problem that simultaneously selects the most appropriate strategy for a given target team, and optimizes the constituents of its coalitions accordingly. We evaluate our approach against several baselines, including some that resemble existing approaches, using detailed numerical simulations, StarCraft II battles, and a multi-robot emergency-response scenario. Our results indicate that our framework consistently outperforms all baselines in terms of requirement satisfaction, resource utilization, and task success rates.</p>
 
 		</div>
 	</div>

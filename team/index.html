@@ -15,71 +15,101 @@ categories:
 
 <div class="bigspacer"></div>
 
+
 {% for member in site.categories.team reversed %}
 	{% if member.alumni != true %}
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-      {% if member.position == 'PhD Student' %}
-        {% if member.coadvised = true %}
-      		<div class="col-lg-4 memberbox">
-      			<div class="media">
-        				<a class="float-left" href="{{ member.url | absolute_url }}">
-          				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
-        				</a>
-       			 	<div class="media-body">
-          				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
-          				<p class="note">{{ member.position }}</p>
-                  <p class="note">Co-advised with {{ member.coadvisor }}</p>
-        				</div>
-      			</div>
-      			<div class="bigspacer"></div>
-      			<div class="bigspacer"></div>
-          </div>
-        {% endif %}
-        <div class="col-lg-4 memberbox">
-          <div class="media">
-              <a class="float-left" href="{{ member.url | absolute_url }}">
-                <img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
-              </a>
-            <div class="media-body">
-                <div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
-                <p class="note">{{ member.position }}</p>
-              </div>
-          </div>
-          <div class="bigspacer"></div>
-          <div class="bigspacer"></div>
-        </div>
-      {% endif %}
-      {% if member.position == 'MS Student' %}
-    		<div class="col-lg-4 memberbox">
-    			<div class="media">
-      				<a class="float-left" href="{{ member.url | absolute_url }}">
-        				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
-      				</a>
-     			 	<div class="media-body">
-        				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
-        				<p class="note">{{ member.position }}</p>
-      				</div>
-    			</div>
-    			<div class="bigspacer"></div>
-    			<div class="bigspacer"></div>
-        </div>
-      {% endif %}
-      {% if member.position == 'BS Student' %}
-    		<div class="col-lg-4 memberbox">
-    			<div class="media">
-      				<a class="float-left" href="{{ member.url | absolute_url }}">
-        				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
-      				</a>
-     			 	<div class="media-body">
-        				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
-        				<p class="note">{{ member.position }}</p>
-      				</div>
-    			</div>
-    			<div class="bigspacer"></div>
-    			<div class="bigspacer"></div>
-        </div>
-      {% endif %}
-    {% cycle 'close rows': '', '', '</div>' %}
+    {% if member.level == 'faculty' %}
+      {% cycle 'add rows': '<div class="row">', '', '' %}
+  		<div class="col-lg-4 memberbox">
+  			<div class="media">
+    				<a class="float-left" href="{{ member.url | absolute_url }}">
+      				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
+    				</a>
+   			 	<div class="media-body">
+      				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
+      				<p class="note">{{ member.position }}</p>
+    				</div>
+  			</div>
+  			<div class="bigspacer"></div>
+  			<div class="bigspacer"></div>
+      </div>
+      {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+
+{% for member in site.categories.team reversed %}
+	{% if member.alumni != true %}
+    {% if member.position == 'PhD Student' %}
+      {% cycle 'add rows': '<div class="row">', '', '' %}
+  		<div class="col-lg-4 memberbox">
+  			<div class="media">
+    				<a class="float-left" href="{{ member.url | absolute_url }}">
+      				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
+    				</a>
+   			 	<div class="media-body">
+      				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
+      				<p class="note">{{ member.position }}</p>
+              {% if member.coadvised == true %}
+                <p class="note">Co-advised with {{ member.coadvisor }}</p>
+              {% endif %}
+    				</div>
+  			</div>
+  			<div class="bigspacer"></div>
+  			<div class="bigspacer"></div>
+      </div>
+      {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% for member in site.categories.team reversed %}
+	{% if member.alumni != true %}
+    {% if member.position == 'MS Student' %}
+      {% cycle 'add rows': '<div class="row">', '', '' %}
+  		<div class="col-lg-4 memberbox">
+  			<div class="media">
+    				<a class="float-left" href="{{ member.url | absolute_url }}">
+      				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
+    				</a>
+   			 	<div class="media-body">
+      				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
+      				<p class="note">{{ member.position }}</p>
+              {% if member.coadvised == true %}
+                <p class="note">Co-advised with {{ member.coadvisor }}</p>
+              {% endif %}
+    				</div>
+  			</div>
+  			<div class="bigspacer"></div>
+  			<div class="bigspacer"></div>
+      </div>
+      {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% for member in site.categories.team reversed %}
+	{% if member.alumni != true %}
+    {% if member.position == 'BS Student' %}
+      {% cycle 'add rows': '<div class="row">', '', '' %}
+  		<div class="col-lg-4 memberbox">
+  			<div class="media">
+    				<a class="float-left" href="{{ member.url | absolute_url }}">
+      				<img width=160 class="mr-3" src="{{ member.image | absolute_url }}">
+    				</a>
+   			 	<div class="media-body">
+      				<div class="head mb-1"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
+      				<p class="note">{{ member.position }}</p>
+              {% if member.coadvised == true %}
+                <p class="note">Co-advised with {{ member.coadvisor }}</p>
+              {% endif %}
+    				</div>
+  			</div>
+  			<div class="bigspacer"></div>
+  			<div class="bigspacer"></div>
+      </div>
+      {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 {% cycle 'close rows': '', '</div>', '</div>' %}
