@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Recent Advances in Robot Learning from Demonstration
-image: /images/papers/ravichandar-lfd-survey.png
+image: /papers/images/ravichandar-lfd-survey.png
 authors: Harish Ravichandar, Athanasios S. Polydoros, Sonia Chernova, Aude Billard
 year: 2020
 ref: Ravichandar et al. Annual Reviews 2020.

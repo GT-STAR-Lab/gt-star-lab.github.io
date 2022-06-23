@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Neural Geometric Fabrics&#58; Efficiently Learning High-Dimensional Policies from Demonstration
-image: /images/papers/xie-nueral-geometric-fabrics.png
+image: /papers/images/xie-nueral-geometric-fabrics.png
 authors: Mandy Xie, Karl Van Wyk, Ankur Handa, Stephen Tyree, Dieter Fox, Harish Ravichandar, Nathan Ratliff
 year: 2022
 ref: Xie et al., OAIL WS, RSS 2022

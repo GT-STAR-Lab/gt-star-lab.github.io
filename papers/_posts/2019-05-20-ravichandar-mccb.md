@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Skill Acquisition via Automated Multi-Coordinate Cost Balancing
-image: /images/papers/ravichandar-mccb.png
+image: /papers/images/ravichandar-mccb.png
 authors: Harish Ravichandar, S. Reza Ahmadzadeh, M. Asif Rana, Sonia Chernova
 year: 2019
 ref: Ravichandar et al. ICRA 2019.

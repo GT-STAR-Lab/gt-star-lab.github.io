@@ -3,7 +3,7 @@ layout: member
 title: Jean Moorman
 level: undergrad
 position: BS Student
-image: /images/team/jean-moorman.jpg
+image: /team/images/jean-moorman.jpg
 scholar: QdWEQoUAAAAJ
 github: jean-moorman
 ---

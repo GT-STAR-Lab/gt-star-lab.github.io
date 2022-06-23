@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Learning Hierarchical Task Networks with Preferences from Unannotated Demonstrations
-image: /images/papers/chen-circuit-htn.png
+image: /papers/images/chen-circuit-htn.png
 authors: Kevin Chen, Nithin Shrivatsav Srikanth, David Kent, Harish Ravichandar, Sonia Chernova
 year: 2020
 ref: Chen et al. CoRL 2020.

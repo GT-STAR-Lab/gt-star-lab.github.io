@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Approximated Dynamic Trait Models for Heterogeneous Multi-Robot Teams
-image: /images/papers/neville-dynamic-traits.png
+image: /papers/images/neville-dynamic-traits.png
 authors: Glen Neville, Harish Ravichandar, Kenneth Shaw, Sonia Chernova
 year: 2020
 ref: Neville et al. IROS 2020.

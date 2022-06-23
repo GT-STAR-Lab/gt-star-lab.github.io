@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Taking Recoveries to Task &#58; Recovery-Driven Development for Recipe-based Robot Tasks
-image: /images/papers/banerjee-rdd.jpg
+image: /papers/images/banerjee-rdd.jpg
 authors: Siddhartha Banerjee, Angel Daruna, David Kent, Weiyu Liu, Jonathan Balloch, Abhinav Jain, Akshay Krishnan, Muhammad Asif Rana, Harish Ravichandar, Binit Shah, Nithin Shrivatsav, Sonia Chernova
 year: 2019
 ref: Banerjee et al. ISRR 2019.

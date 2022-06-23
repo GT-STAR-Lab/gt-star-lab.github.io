@@ -4,7 +4,7 @@ title: Rachit Bhargava
 level: grad
 position: MS Student
 github: RachitBhargava99
-image: /images/team/rachit-bhargava.png
+image: /team/images/rachit-bhargava.png
 email: rachitbhargava99@gmail.com
 website: https://rachitbhargava99.github.io/Portfolio/
 alumni: true

@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Learning position and orientation dynamics from demonstrations via contraction analysis
-image: /images/papers/ravichandar-cdsp.png
+image: /papers/images/ravichandar-cdsp.png
 authors: Harish Ravichandar, Ashwin Dani
 year: 2019
 ref: Ravichandar et al. AuRo 2019.

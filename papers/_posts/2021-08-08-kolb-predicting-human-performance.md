@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Predicting Individual Human Performance in Human-Robot Teaming
-image: /images/papers/kolb-predicting-human-performance.png
+image: /papers/images/kolb-predicting-human-performance.png
 authors: Jack Kolb, Harish Ravichandar, Sonia Chernova
 year: 2021
 ref: Kolb et al. RO-MAN 2021.

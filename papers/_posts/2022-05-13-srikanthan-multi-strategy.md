@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation
-image: /images/papers/srikanthan-multi-strategy.png
+image: /papers/images/srikanthan-multi-strategy.png
 authors: Anusha Srikanthan, Harish Ravichandar
 year: 2022
 ref: Srikanthan and Ravichandar, AAMAS 2022.

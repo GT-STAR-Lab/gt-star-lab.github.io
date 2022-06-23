@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Learning and Coordination of Movement Primitives for Bimanual Manipulation Tasks Using Concurrent Synchronization
-image: /images/papers/dani-bimanual-concurrent-synchronization.png
+image: /papers/images/dani-bimanual-concurrent-synchronization.png
 authors: Ashwin P. Dani, Iman Salehi, Ghananeel Rotithor, Daniel Trombetta, Harish Ravichandar
 year: 2020
 ref: Dani et al. WS-RAIM 2020.

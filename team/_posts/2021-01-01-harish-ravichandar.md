@@ -6,8 +6,8 @@ position: Assistant Professor
 twitter: h_ravichandar
 github: harishravichandar
 scholar: d2HP6SMAAAAJ
-image: /images/team/harish-ravichandar.jpg
-cv: /pdfs/team/harish-ravichandar-cv.pdf
+image: /team/images/harish-ravichandar.jpg
+cv: /team/pdfs/HarishRavichandar-CV.pdf
 website: https://harishravichandar.com/
 email: harish.ravichandar@cc.gatech.edu
 ---

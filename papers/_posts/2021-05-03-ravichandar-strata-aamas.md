@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: STRATA &#58; Unified Framework for Task Assignments in Large Teams of Heterogeneous Agents
-image: /images/papers/ravichandar-strata.png
+image: /papers/images/ravichandar-strata.png
 authors: Harish Ravichandar, K. Shaw, Sonia Chernova
 year: 2021
 ref: Ravichandar et al. AAMAS 2021.

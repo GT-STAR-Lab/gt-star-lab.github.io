@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Desperate Times Call for Desperate Measures - Towards Risk-Adaptive Coalition Formation
-image: /images/papers/rudolph-risk-adaptive-ta.png
+image: /papers/images/rudolph-risk-adaptive-ta.png
 authors: Max Rudolph, Sonia Chernova, Harish Ravichandar
 year: 2021
 ref: Rudolph et al. IROS 2021.

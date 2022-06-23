@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Leveraging Cognitive States in Human-Robot Teaming
-image: /images/papers/kolb-leveraging-cognitive-states.png
+image: /papers/images/kolb-leveraging-cognitive-states.png
 authors: Jack Kolb, Harish Ravichandar, Sonia Chernova
 year: 2022
 ref: Kolb et al., RO-MAN 2022.

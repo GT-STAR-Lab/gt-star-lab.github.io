@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Learning Hierarchical Task Networks with Preferences from Unannotated Demonstrations
-image: /images/papers/rana-learning-rmp-trees.png
+image: /papers/images/rana-learning-rmp-trees.png
 authors: M. Asif Rana, Anqi Li, Harish Ravichandar, Mustafa Mukadam, Sonia Chernova, Dieter Fox, Byron Boots, Nathan Ratliff
 year: 2019
 ref: Rana et al. CoRL 2019.

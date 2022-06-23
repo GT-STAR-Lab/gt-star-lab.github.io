@@ -5,7 +5,7 @@ level: grad
 position: PhD Student
 coadvised: true
 coadvisor: Ye Zhao
-image: /images/team/yunhai-han.png
+image: /team/images/yunhai-han.png
 github: y8han
 website: https://y8han.github.io/
 scholar: lsN3nY8AAAAJ

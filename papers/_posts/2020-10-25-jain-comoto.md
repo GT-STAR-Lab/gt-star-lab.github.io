@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Anticipatory Human-Robot Collaboration via Multi-Objective Trajectory Optimization
-image: /images/papers/jain-comoto.png
+image: /papers/images/jain-comoto.png
 authors: Abhinav Jain, Daphne Chen, Dhruv Bansal, Sam Scheele, Mayank Kishore, Hritik Sapra, David Kent, Harish Ravichandar, Sonia Chernova
 year: 2020
 ref: Jain et al. IROS 2020.
