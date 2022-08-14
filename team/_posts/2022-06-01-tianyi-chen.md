@@ -3,7 +3,7 @@ layout: member
 title: Tianyi Chen
 level: undergrad
 position: BS Student
-image: /team/images/tianyi-chen.jpg
+image: /team/images/tianyi_chen.jpg
 github: tychen32
 website: https://tianyichen.qidiantechnology.com/
 email: tchen457@gatech.edu
