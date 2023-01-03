@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Inferring Implicit Trait Preferences from Demonstrations of Task Allocation in Heterogenous Teams
-image: /papers/images/mallampati_trait-preference.png
+image: /papers/images/mallampati_trait-preference-2.png
 authors: Vivek Mallampati, Harish Ravichandar
 year: 2023
 ref: Mallampati and Ravichandar, AAMAS 2023.
