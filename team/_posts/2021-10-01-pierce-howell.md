@@ -5,7 +5,8 @@ level: grad
 position: PhD Student
 image: /team/images/pierce-howell.png
 github: piercehowell
-note: DoD SMART Scholar
+note: true
+notes: DoD SMART Scholar
 ---
 
 
