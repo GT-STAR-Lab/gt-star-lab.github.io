@@ -6,7 +6,7 @@ position: MS Student
 twitter: abhineet95
 github: AbhineetJain
 image: /team/images/abhineet-jain.png
-website: https://abhineetjain.com/
+website: https://www.abhineetjain.com/
 email: ajain448@gatech.edu
 ---
 
