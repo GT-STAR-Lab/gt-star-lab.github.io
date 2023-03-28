@@ -8,6 +8,7 @@ ref: Neville et al. RA-L 2023.
 journal: "IEEE Robotics and Automation Letters (RA-L)"
 pdf: https://arxiv.org/ftp/arxiv/papers/2209/2209.13092.pdf
 arxiv: 2209.13092
+github: GT-STAR-Lab/D-ITAGS
 ---
 
 ## Abstract
