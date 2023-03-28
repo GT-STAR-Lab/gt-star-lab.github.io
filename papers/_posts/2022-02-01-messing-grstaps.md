@@ -3,8 +3,8 @@ layout: paper
 title: GRSTAPS&#58; Graphically Recursive Simultaneous Task Allocation, Planning, and Scheduling
 image: /papers/images/messing-grstaps.png
 authors: Andrew Messing*, Glen Neville*, Seth Hutchinson, Sonia Chernova, Harish Ravichandar<br />(* equal contribution)
-year: 2021
-ref: Messing et al. IJRR 2021.
+year: 2022
+ref: Messing et al. IJRR 2022.
 journal: "International Journal of Robotics Research (IJRR)"
 pdf: https://journals.sagepub.com/doi/full/10.1177/02783649211052066
 github: GT-STAR-Lab/GRSTAPS
