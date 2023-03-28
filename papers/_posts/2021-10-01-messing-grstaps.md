@@ -7,7 +7,7 @@ year: 2021
 ref: Messing et al. IJRR 2021.
 journal: "International Journal of Robotics Research (IJRR)"
 pdf: https://journals.sagepub.com/doi/full/10.1177/02783649211052066
-github: amessing/grstaps
+github: GT-STAR-Lab/GRSTAPS
 ---
 
 ## Abstract
