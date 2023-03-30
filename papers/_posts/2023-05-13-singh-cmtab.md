@@ -1,6 +1,6 @@
 ---
 layout: paper
-title:  2023
+title: Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation
 image: /papers/images/singh-cmtab.png
 authors: Sukriti Singh, Anusha Srikanthan, Vivek Mallampati, Harish Ravichandar
 year: 2023
