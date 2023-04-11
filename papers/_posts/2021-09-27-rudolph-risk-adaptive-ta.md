@@ -7,6 +7,7 @@ year: 2021
 ref: Rudolph et al. IROS 2021.
 journal: "International Conference on Intelligent Robots and Systems (IROS)"
 pdf: https://arxiv.org/pdf/2108.00346.pdf
+github: GT-STAR-Lab/risk_adaptive_task_allocation
 arxiv: 2108.00346
 ---
 
