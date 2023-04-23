@@ -6,7 +6,7 @@ authors: Sukriti Singh, Anusha Srikanthan, Vivek Mallampati, Harish Ravichandar
 year: 2023
 ref: Singh et al., RSS 2023.
 journal: "Robotics: Science and Systems (RSS)"
-github: comming soon
+github: GT-STAR-Lab/CMTAB
 pdf: coming soon
 ---
 

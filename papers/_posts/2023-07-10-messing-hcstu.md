@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: A Sampling-Based Approach for Heterogeneous Coalition Scheduling with Temporal Uncertainty
+title: A Sampling-based Approach for Heterogeneous Coalition Scheduling with Temporal Uncertainty
 image: /papers/images/messing-hcstu.png
 authors: Andrew Messing, Jacopo Banfi, Martina Stadler, Ethan Stump, Harish Ravichandar, Nicholas Roy, Seth Hutchinson
 year: 2023

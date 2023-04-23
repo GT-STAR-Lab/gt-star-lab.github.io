@@ -8,6 +8,7 @@ ref: Srikanthan and Ravichandar, AAMAS 2022.
 journal: "Autonomous Agents and Multi-Agent Systems (AAMAS) - Extended Abstract"
 arxiv: 2108.02733
 github: GT-STAR-Lab/Resource-Aware-Generalization
+pdf: https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p1732.pdf
 ---
 
 ## Abstract

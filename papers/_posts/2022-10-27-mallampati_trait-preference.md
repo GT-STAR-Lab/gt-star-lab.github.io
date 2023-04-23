@@ -6,6 +6,7 @@ authors: Vivek Mallampati, Harish Ravichandar
 year: 2022
 ref: Mallampati and Ravichandar, H-MRS WS, IROS 2022
 journal: "Workshop on Human-Multi-Robot Systems, International Conference on Intelligent Robots and Systems (IROS)"
+arxiv: 2302.10817
 ---
 
 ## Abstract

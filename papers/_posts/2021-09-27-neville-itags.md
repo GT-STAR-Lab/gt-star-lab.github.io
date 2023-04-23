@@ -6,7 +6,7 @@ authors: Glen Neville, Andrew Messing, Harish Ravichandar, Seth Hutchinson Sonia
 year: 2021
 ref: Neville et al. IROS 2021.
 journal: "International Conference on Intelligent Robots and Systems (IROS)"
-pdf: https://arxiv.org/pdf/2108.02773.pdf
+pdf: https://ieeexplore.ieee.org/document/9636569
 arxiv: 2108.02773
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: D-ITAGS &#58; A Dynamic Interleaved Approach to Resilient Task Allocation, Scheduling, and Motion Planning
+title: D-ITAGS&#58; A Dynamic Interleaved Approach to Resilient Task Allocation, Scheduling, and Motion Planning
 image: /papers/images/neville-ditags.png
 authors: Glen Neville, Sonia Chernova, Harish Ravichandar
 year: 2023

@@ -1,12 +1,12 @@
 ---
 layout: paper
-title: Desperate Times Call for Desperate Measures - Towards Risk-Adaptive Coalition Formation
+title: Desperate Times Call for Desperate Measures&#58; Towards Risk-Adaptive Coalition Formation
 image: /papers/images/rudolph-risk-adaptive-ta.png
 authors: Max Rudolph, Sonia Chernova, Harish Ravichandar
 year: 2021
 ref: Rudolph et al. IROS 2021.
 journal: "International Conference on Intelligent Robots and Systems (IROS)"
-pdf: https://arxiv.org/pdf/2108.00346.pdf
+pdf: https://ieeexplore.ieee.org/document/9635955
 github: GT-STAR-Lab/risk_adaptive_task_allocation
 arxiv: 2108.00346
 ---

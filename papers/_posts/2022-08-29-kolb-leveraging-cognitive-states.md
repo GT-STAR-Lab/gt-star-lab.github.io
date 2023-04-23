@@ -7,7 +7,7 @@ year: 2022
 ref: Kolb et al., RO-MAN 2022.
 journal: "IEEE International Conference on Robot and
 Human Interactive Communication (RO-MAN)"
-pdf: coming soon
+pdf: https://ieeexplore.ieee.org/document/9900794
 ---
 
 ## Abstract
