@@ -147,7 +147,14 @@ categories:
   				-->
             <div class="media-body">
                 <div class="head media-heading"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
-                <p class="note">{{ member.position }}</p>
+                <p class="note">{{ member.position }}<br> 
+                    {% if member.coadvised == true %} 
+                        Co-advised with {{ member.coadvisor }}<br> 
+                    {% endif %} 
+                    {% if member.note == true %}
+                        {{ member.notes }} 
+                    {% endif %}
+                </p>
             </div>
         </div>
         <div class="bigspacer"></div>

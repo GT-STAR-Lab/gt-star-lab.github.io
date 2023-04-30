@@ -15,7 +15,14 @@ layout: default
 			</div>
 			<p>
 			<div class="smallhead">
-				{{ member.position }}
+				<p class="note">{{ member.position }}<br> 
+                    {% if member.coadvised == true %} 
+                        Co-advised with {{ member.coadvisor }}<br> 
+                    {% endif %} 
+                    {% if member.note == true %}
+                        {{ member.notes }} 
+                    {% endif %}
+                </p>
 			</div>
 		</div>
 	</div>
