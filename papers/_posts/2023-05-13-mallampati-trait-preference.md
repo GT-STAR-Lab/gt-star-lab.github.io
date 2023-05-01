@@ -7,7 +7,7 @@ year: 2023
 ref: Mallampati and Ravichandar, AAMAS 2023.
 journal: "Autonomous Agents and Multi-Agent Systems (AAMAS) - Extended Abstract"
 arxiv: 2302.10817
-github: coming soon
+github: GT-STAR-Lab/trait_weight_optimization
 ---
 
 ## Abstract
