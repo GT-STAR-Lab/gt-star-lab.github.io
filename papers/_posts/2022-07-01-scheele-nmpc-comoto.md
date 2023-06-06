@@ -6,6 +6,7 @@ authors: Sam Scheele, Pierce Howell, Harish Ravichandar
 year: 2022
 ref: Scheele et al., CP-HRI WS, RSS 2022
 journal: "Workshop on Close Proximity Human-Robot Collaboration, Robotics: Science and Systems (RSS)"
+arxiv: 2305.11978
 ---
 
 ## Abstract

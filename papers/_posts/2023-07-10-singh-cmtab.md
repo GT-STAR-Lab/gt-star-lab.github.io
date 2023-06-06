@@ -8,6 +8,7 @@ ref: Singh et al., RSS 2023.
 journal: "Robotics: Science and Systems (RSS)"
 github: GT-STAR-Lab/CMTAB
 pdf: coming soon
+arxiv: 2305.15288
 ---
 
 ## Abstract
