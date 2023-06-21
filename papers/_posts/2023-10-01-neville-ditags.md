@@ -5,10 +5,11 @@ image: /papers/images/neville-ditags.png
 authors: Glen Neville, Sonia Chernova, Harish Ravichandar
 year: 2023
 ref: Neville et al., RA-L and IROS 2023.
-journal: "IEEE Robotics and Automation Letters (RA-L)" and "International Conference on Intelligent Robots and Systems (IROS)"
+journal: "IEEE Robotics and Automation Letters (RA-L) and International Conference on Intelligent Robots and Systems (IROS)"
 pdf: https://arxiv.org/ftp/arxiv/papers/2209/2209.13092.pdf
 arxiv: 2209.13092
 github: GT-STAR-Lab/D-ITAGS
+
 ---
 
 ## Abstract
