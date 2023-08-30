@@ -3,7 +3,7 @@ layout: member
 title: Calix Tang
 level: undergrad
 position: BS Student
-image: /team/images/calix-tang.png
+image: /team/images/calix-tang.jpg
 github: CalixTang
 scholar: PWAKyAwAAAAJ
 email: ctang306@gatech.edu
