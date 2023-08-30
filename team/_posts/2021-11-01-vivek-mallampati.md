@@ -6,6 +6,7 @@ position: MS Student
 image: /team/images/vivek-mallampati.jpg
 website: https://vivekmallampati.github.io/
 github: vivekmallampati
+alumni: true
 ---
 
 

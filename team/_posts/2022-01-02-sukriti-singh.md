@@ -6,6 +6,7 @@ position: MS Student
 image: /team/images/sukriti-singh.jpg
 website: https://www.linkedin.com/in/sukritisingh1221/
 github: singh-sukriti
+alumni: true
 ---
 
 

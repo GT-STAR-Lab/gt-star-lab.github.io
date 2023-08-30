@@ -8,6 +8,7 @@ github: AbhineetJain
 image: /team/images/abhineet-jain.png
 website: https://www.abhineetjain.com/
 email: ajain448@gatech.edu
+alumni: true
 ---
 
 I am an MS in CS student at Georgia Tech, currently working on learning dexterous manipulation from demonstrations with [Prof. Harish Ravichandar](https://harishravichandar.com/).

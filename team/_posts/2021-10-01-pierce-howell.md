@@ -2,7 +2,7 @@
 layout: member
 title: Pierce Howell
 level: grad
-position: PhD Student
+position: MS Student
 image: /team/images/pierce-howell.png
 github: piercehowell
 note: true
