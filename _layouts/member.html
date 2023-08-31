@@ -136,7 +136,7 @@ layout: default
 		<div class="spacer"></div>
 		{% for paper in site.categories.papers %}
 		{% if paper.authors contains searchstring %}
-		<p><a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a>
+		<p><a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}, {{ page.journal }}, {{ page.year }}</a>
 		{% endif %}
 		{% endfor %}
 		{% endif %}
