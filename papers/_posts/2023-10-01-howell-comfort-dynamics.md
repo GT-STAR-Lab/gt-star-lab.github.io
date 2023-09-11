@@ -6,7 +6,7 @@ authors: Pierce Howell, Jack Kolb*, Yifan Liu*, Harish Ravichandar<br />(* equal
 year: 2023
 ref: Howell et al., IROS 2023.
 journal: "International Conference on Intelligent Robots and Systems (IROS)"
-pdf: coming soon
+pdf: https://arxiv.org/abs/2308.01466
 
 ---
 
