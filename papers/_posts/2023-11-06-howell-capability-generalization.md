@@ -2,7 +2,7 @@
 layout: paper
 title: Generalization of Heterogeneous Multi-Robot Policies via Awareness and Communication of Capabilities
 image: /papers/images/howell-capability-generalization.png
-authors: Pierce Howell, Max Rudolph, Reza Torbati, Kevin Fu, Harish Ravichandar
+authors: Pierce Howell*, Max Rudolph*, Reza Torbati, Kevin Fu, Harish Ravichandar<br />(* equal contribution)
 year: 2023
 ref: Pierce et al., CoRL 2023.
 journal: Conference on Robot Learning (CoRL)
