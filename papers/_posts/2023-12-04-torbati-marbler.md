@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: MARBLER: An Open Platform for Standardized Evaluation of Multi-Robot Reinforcement Learning Algorithms
+title: MARBLER&#58; An Open Platform for Standardized Evaluation of Multi-Robot Reinforcement Learning Algorithms
 image: /papers/images/torbati-marbler.png
 authors: Reza Torbati, Shubham Lohiya, Shivika Singh, Meher Shashwat Nigam, Harish Ravichandar
 year: 2023
