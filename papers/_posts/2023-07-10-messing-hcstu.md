@@ -7,7 +7,7 @@ year: 2023
 ref: Messing et al., RSS 2023.
 journal: "Robotics: Science and Systems (RSS)"
 github: comming soon
-pdf: coming soon
+pdf: https://www.roboticsproceedings.org/rss19/p107.pdf
 ---
 
 ## Abstract
