@@ -4,8 +4,8 @@ title: MARBLER&#58; An Open Platform for Standardized Evaluation of Multi-Robot 
 image: /papers/images/torbati-marbler.png
 authors: Reza Torbati, Shubham Lohiya, Shivika Singh, Meher Shashwat Nigam, Harish Ravichandar
 year: 2023
-ref: Torbati et al., MRS 2023.
-journal: International Symposium on Multi-Robot & Multi-Agent Systems (MRS)
+ref: Torbati et al., MRS 2023 (Best Paper Award).
+journal: International Symposium on Multi-Robot & Multi-Agent Systems (MRS) - Best Paper Award
 arxiv: 2307.03891
 github: ShashwatNigam99/MARBLER
 supplement: https://shubhlohiya.github.io/MARBLER
