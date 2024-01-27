@@ -7,6 +7,7 @@ image: /team/images/pierce-howell.png
 github: piercehowell
 note: true
 notes: DoD SMART Scholar
+alumni: true
 ---
 
 
