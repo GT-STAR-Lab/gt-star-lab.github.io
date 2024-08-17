@@ -3,7 +3,7 @@ layout: member
 title: Hanyao Guo
 level: grad
 position: MS Student
-image: /team/images/hanyao-guo.jpg
+image: /team/images/hanyao-guo.jpeg
 github: HGuo323
 email: hguo323@gatech.edu
 ---
