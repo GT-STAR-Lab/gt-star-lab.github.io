@@ -7,7 +7,7 @@ year: 2023
 ref: Howell et al., CoRL 2023.
 journal: Conference on Robot Learning (CoRL)
 pdf: https://openreview.net/pdf?id=N3VbFUpwaa
-github: https://github.com/GT-STAR-Lab/cap-comm
+github: GT-STAR-Lab/cap-comm
 supplement: https://sites.google.com/view/cap-comm
 
 ---
