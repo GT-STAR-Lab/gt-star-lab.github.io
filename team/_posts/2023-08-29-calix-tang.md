@@ -3,6 +3,7 @@ layout: member
 title: Calix Tang
 level: undergrad
 position: BS Student
+alumni: true
 image: /team/images/calix-tang.jpg
 github: CalixTang
 scholar: PWAKyAwAAAAJ

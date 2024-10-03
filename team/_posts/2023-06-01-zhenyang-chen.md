@@ -3,6 +3,7 @@ layout: member
 title: Zhenyang Chen
 level: grad
 position: MS Student
+alumni: true
 image: /team/images/zhenyang-chen.jpg
 github: ChenZhenY
 website: https://chenzheny.github.io/
