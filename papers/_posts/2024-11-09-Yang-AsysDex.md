@@ -5,7 +5,7 @@ image: /papers/images/yang-asymDex.png
 authors: Zhaodong Yang, Yunhai Han, Harish Ravichandar
 year: 2024
 ref: Yang et al., WCBM WS, CoRL 2024.
-journal: "Conference on Robot Learning (CoRL)"
+journal: "Workshop on Whole-body Control and Bimanual Manipulation: Applications in Humanoids and Beyond, Conference on Robot Learning (CoRL)"
 supplement: https://sites.google.com/view/asymdex-2024/
 
 ---
