@@ -3,7 +3,7 @@ layout: member
 title: Linhao Bai
 level: grad
 position: MS Student
-image: /team/images/linhao-bai.jpg
+image: /team/images/linhao-bai.png
 github: lbai46
 website: https://marvelousp4.github.io/
 email: lbai46@gatech.edu
