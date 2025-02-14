@@ -42,3 +42,4 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
+  - "*.DS_Store"
