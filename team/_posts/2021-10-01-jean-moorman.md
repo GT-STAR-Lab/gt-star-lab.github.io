@@ -6,6 +6,7 @@ position: MS Student
 image: /team/images/jean-moorman.jpg
 scholar: QdWEQoUAAAAJ
 github: jean-moorman
+alumni: true
 ---
 
 

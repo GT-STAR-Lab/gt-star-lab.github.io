@@ -134,7 +134,7 @@ categories:
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %} 
+{% for member in site.categories.team %} 
 {% if member.alumni == true %} 
 {% cycle 'add rows 2': '
 <div class="row">', '', '' %}
@@ -152,7 +152,9 @@ categories:
                         Co-advised with {{ member.coadvisor }}<br> 
                     {% endif %} 
                     {% if member.note == true %}
-                        {{ member.notes }} 
+                        {{ member.notes }}<br> 
+                    {% if member.next == true %}
+                        Next: {{ member.next }}
                     {% endif %}
                 </p>
             </div>

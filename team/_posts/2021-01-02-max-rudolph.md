@@ -10,6 +10,7 @@ image: /team/images/max-rudolph.jpg
 website: https://maxrudolph1.github.io/
 email: mrudolph8@gatech.edu
 alumni: true
+next: UT Austin (PhD)
 ---
 
 Max moved on to UT Austin to pursue his PhD!
