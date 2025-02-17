@@ -4,7 +4,7 @@ title: Mugdha Daftardar
 level: undergrad
 position: BS Student
 image: /team/images/mugdha-daftardar.jpg
-github: mdaftardar3
+github: mdaftardar
 email: mdaftardar3@gatech.edu
 ---
 
