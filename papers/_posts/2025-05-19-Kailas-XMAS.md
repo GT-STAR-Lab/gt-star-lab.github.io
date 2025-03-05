@@ -6,7 +6,7 @@ authors: Siva Kailas, Shalin Jain, Harish Ravichandar
 year: 2025
 ref: Kailas et al., AAMAS 2025.
 journal: Autonomous Agents and Multi-Agent Systems (AAMAS) - Extended Abstract
-pdf: https://openreview.net/pdf?id=GFVsOgttec
+arxiv: 2502.09889
 github: GT-STAR-Lab/XMAS
 
 ---
