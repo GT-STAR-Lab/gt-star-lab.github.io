@@ -2,7 +2,7 @@
 
 layout: paper
 
-title: JaxRobotarium: Training and Deploying Multi-Robot Policies in 10 Minutes
+title: JaxRobotarium&#58; Training and Deploying Multi-Robot Policies in 10 Minutes
 
 image: /papers/images/jain-jaxrobotarium.png
 
