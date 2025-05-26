@@ -10,7 +10,7 @@ authors: Shalin Anand Jain, Jiazhen Liu, Siva Kailas, Harish Ravichandar
 
 year: 2025
 
-journal: Preprint
+journal: Preprint
 
 ref: Jain et al., Preprint, 2025.
 
