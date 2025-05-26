@@ -135,7 +135,7 @@ categories:
 
 <div class="bigspacer"></div>
 
-{# PhD Alumni #}
+
 {% for member in site.categories.team %}
 {% if member.alumni == true and member.position == 'PhD Student' %}
 {% cycle 'add rows 2': '
@@ -143,6 +143,7 @@ categories:
     <div class="col-lg-4 memberbox">
         <div class="media">
             <div class="media-body">
+                <!-- DEBUG: {{ member.title }} | next: {{ member.next }} -->
                 <div class="head media-heading"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
                 <p class="note">{{ member.position }}<br> 
                     {% if member.coadvised == true %} 
@@ -163,7 +164,7 @@ categories:
 {% endif %}
 {% endfor %}
 
-{# MS Alumni #}
+
 {% for member in site.categories.team %}
 {% if member.alumni == true and member.position == 'MS Student' %}
 {% cycle 'add rows 2': '
@@ -191,7 +192,6 @@ categories:
 {% endif %}
 {% endfor %}
 
-{# BS Alumni #}
 {% for member in site.categories.team %}
 {% if member.alumni == true and member.position == 'BS Student' %}
 {% cycle 'add rows 2': '
