@@ -14,6 +14,8 @@ journal: Preprint
 
 ref: Yang et al., Preprint, 2025.
 
+arxiv: 2411.13020
+
 supplement: https://sites.google.com/view/asymdex-2025/
 
 github: coming soon
