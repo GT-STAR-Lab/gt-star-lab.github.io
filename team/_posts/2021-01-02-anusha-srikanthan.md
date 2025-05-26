@@ -8,7 +8,7 @@ scholar: FE39aW0AAAAJ
 image: /team/images/anusha-srikanthan.jpg
 website: https://nusha97.github.io/
 alumni: true
-next: UPenn (PhD)
+next-position: UPenn PhD Student
 ---
 
 Anusha Srikanthan is now a PhD student at UPenn working with Nikolai Matni and Vijay Kumar.

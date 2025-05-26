@@ -7,6 +7,7 @@ image: /team/images/vivek-mallampati.jpg
 website: https://vivekmallampati.github.io/
 github: vivekmallampati
 alumni: true
+next-position: Oregon State PhD Student
 ---
 
 

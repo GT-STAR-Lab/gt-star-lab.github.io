@@ -143,7 +143,6 @@ categories:
     <div class="col-lg-4 memberbox">
         <div class="media">
             <div class="media-body">
-                <!-- DEBUG: {{ member.title }} | next: {{ member.next }} -->
                 <div class="head media-heading"><a href="{{ member.url | absolute_url }}" class="off">{{ member.title }}</a></div>
                 <p class="note">{{ member.position }}<br> 
                     {% if member.coadvised == true %} 
@@ -153,7 +152,7 @@ categories:
                         {{ member.notes }}<br> 
                     {% endif %}
                     {% if member.next %}
-                        <b>Next: {{ member.next | escape }}</b><br>
+                        <b>Next: {{ member.next-position | escape }}</b><br>
                     {% endif %}
                 </p>
             </div>
@@ -181,7 +180,7 @@ categories:
                         {{ member.notes }}<br> 
                     {% endif %}
                     {% if member.next %}
-                        <b>Next: {{ member.next | escape }}</b><br>
+                        <b>Next: {{ member.next-position | escape }}</b><br>
                     {% endif %}
                 </p>
             </div>
@@ -208,7 +207,7 @@ categories:
                         {{ member.notes }}<br> 
                     {% endif %}
                     {% if member.next %}
-                        <b>Next: {{ member.next | escape }}</b><br>
+                        <b>Next: {{ member.next-position | escape }}</b><br>
                     {% endif %}
                 </p>
             </div>
