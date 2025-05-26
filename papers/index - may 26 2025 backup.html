@@ -13,46 +13,10 @@ For a more comprehensive list, please check out <a href="https://scholar.google.
 You can find open-source code associated with the papers below in our lab's <a href="https://github.com/GT-STAR-Lab">Github profile</a>.
 </div>
 
-<!-- Preprints Section -->
-{% assign preprints = site.categories.papers | where: "year", "Preprint" %}
-{% if preprints.size > 0 %}
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Preprints</h1>
-      <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
-    </div>
-  </div>
-  <div class="row">
-    {% for paper in preprints %}
-      <div class="col-lg-4 paperbox">
-        <div class="media">
-          <div class="media-body">
-            <div class="smallhead mb-1"><a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a></div>
-            <p style="font-weight: bold;" class="note">{{ paper.ref }}</p>
-          </div>
-          <a href="{{ paper.url }}">
-            <img class="ml-3" width=100 class="media-object" src="{{ paper.image | absolute_url }}">
-          </a>
-        </div>
-        <div class="bigspacer"></div>
-        <div class="spacer"></div>
-      </div>
-      {% assign mod = forloop.index0 | plus: 1 | modulo: 3 %}
-      {% if mod == 0 and forloop.last == false %}
-        </div><div class="row">
-      {% endif %}
-    {% endfor %}
-  </div>
-{% endif %}
-
-{% comment %}
-  Main papers loop (excluding preprints)
-{% endcomment %}
-{% assign non_preprints = site.categories.papers | reject: "year", "Preprint" %}
-{% assign papers = non_preprints %}
-{% for paper in papers %}
+{% for paper in site.categories.papers %}
 {% capture prev_year %}{{ this_year }}{% endcapture %}
 {% capture this_year %}{{ paper.year }}{% endcapture %}
+
 
 {% if forloop.first %}
     {% assign counter = 0 %}
