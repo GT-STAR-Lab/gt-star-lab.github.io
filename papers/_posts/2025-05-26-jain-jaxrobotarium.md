@@ -4,13 +4,13 @@ layout: paper
 
 title: JaxRobotarium&#58; Training and Deploying Multi-Robot Policies in 10 Minutes
 
-image: /papers/images/jain-jaxrobotarium.png
+image: /papers/images/2025-jain-jaxrobotarium.png
 
 authors: Shalin Anand Jain, Jiazhen Liu, Siva Kailas, Harish Ravichandar
 
 year: Preprint
 
-ref: Jain et al., 2025.
+ref: Jain et al., Preprint, 2025.
 
 arxiv: 2505.06771
 
