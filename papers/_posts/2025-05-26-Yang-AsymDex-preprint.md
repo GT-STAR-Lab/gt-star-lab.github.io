@@ -8,7 +8,9 @@ image: /papers/images/2025-yang-asymdex-poses.png
 
 authors: Zhaodong Yang, Yunhai Han, Harish Ravichandar
 
-year: Preprint
+year: 2025
+
+journal: Preprint
 
 ref: Yang et al., Preprint, 2025.
 

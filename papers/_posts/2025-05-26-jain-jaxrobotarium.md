@@ -8,7 +8,9 @@ image: /papers/images/2025-jain-jaxrobotarium.png
 
 authors: Shalin Anand Jain, Jiazhen Liu, Siva Kailas, Harish Ravichandar
 
-year: Preprint
+year: 2025
+
+journal: Preprint
 
 ref: Jain et al., Preprint, 2025.
 

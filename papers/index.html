@@ -14,7 +14,7 @@ You can find open-source code associated with the papers below in our lab's <a h
 </div>
 
 <!-- Preprints Section -->
-{% assign preprints = site.categories.papers | where: "year", "Preprint" %}
+{% assign preprints = site.categories.papers | where: "journal", "Preprint" %}
 {% if preprints.size > 0 %}
   <div class="row">
     <div class="col-md-12">
@@ -46,7 +46,7 @@ You can find open-source code associated with the papers below in our lab's <a h
 {% endif %}
 
 <!-- Published papers loop -->
-{% assign papers = site.categories.papers | where_exp: "item", "item.year != 'Preprint'" | sort: "year" | reverse %}
+{% assign papers = site.categories.papers | where_exp: "item", "item.journal != 'Preprint'" | sort: "year" | reverse %}
 {% assign prev_year = "" %}
 {% assign col_count = 0 %}
 {% for paper in papers %}

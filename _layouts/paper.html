@@ -7,37 +7,9 @@ layout: default
     {% if page.image %}
     <img class="img-fluid mb-3" style="max-width:100%;height:auto;" src="{{ page.image | absolute_url }}">
     {% endif %}
-  </div>
-  <div class="col-lg-9">
-    <div class="titlebox">
-      <div class="head">
-        {{ page.title }}
-      </div>
-      <div class="smallhead">
-        <p style="font-weight: bold;">{{ page.authors }}</p>
-        {% if page.journal == "Preprint" %}
-        <p style="font-style: italic;">Preprint, {{ page.year }}.</p>
-        {% else %}
-        <p style="font-style: italic;">{{ page.journal }}, {{ page.year }}.</p>
-        {% endif %}
-      </div>
-    </div>
-    <div class="note mt-4">
-      {{ content }}
-    </div>
-  </div>
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="row">
-  <div class="col-lg-3">
-    <div class="bigspacer"></div>
-    <div class="glyphbox note">
+    <div class="glyphbox note mt-4">
       {% if page.pdf %}
-      <div class="smallhead">
-        PDF
-      </div>
+      <div class="smallhead">PDF</div>
       <div class="pad-left note">
         <div class="smallspacer"></div>
         <i class="fa fa-file-text-o fa-fw"></i>
@@ -46,9 +18,7 @@ layout: default
       <div class="bigspacer"></div>
       {% endif %}
       {% if page.supplement %}
-      <div class="smallhead">
-        Supplement
-      </div>
+      <div class="smallhead">Supplement</div>
       <div class="pad-left note">
         <div class="smallspacer"></div>
         <i class="fa fa-paperclip fa-fw"></i>
@@ -57,9 +27,7 @@ layout: default
       <div class="bigspacer"></div>
       {% endif %}
       {% if page.arxiv %}
-      <div class="smallhead">
-        arXiv
-      </div>
+      <div class="smallhead">arXiv</div>
       <div class="pad-left note">
         <div class="smallspacer"></div>
         <i class="fa fa-external-link fa-fw"></i>
@@ -68,9 +36,7 @@ layout: default
       <div class="bigspacer"></div>
       {% endif %}
       {% if page.github %}
-      <div class="smallhead">
-        GitHub
-      </div>
+      <div class="smallhead">GitHub</div>
       <div class="pad-left note">
         <div class="smallspacer"></div>
         <i class="fa fa-github-alt fa-fw"></i>
@@ -80,6 +46,20 @@ layout: default
       {% endif %}
     </div>
   </div>
-  <div class="col-lg-8"></div>
-  <div class="col-lg-1"></div>
+  <div class="col-lg-9">
+    <div class="titlebox">
+      <div class="head">
+        {{ page.title }}
+      </div>
+      <div class="smallhead">
+        <p style="font-weight: bold;">{{ page.authors }}</p>
+        <p style="font-style: italic;">{{ page.journal }}, {{ page.year }}.</p>
+      </div>
+    </div>
+    <div class="note mt-4">
+      {{ content }}
+    </div>
+  </div>
 </div>
+
+<div class="bigspacer"></div>
