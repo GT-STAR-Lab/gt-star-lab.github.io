@@ -152,7 +152,7 @@ categories:
                         {{ member.notes }}<br> 
                     {% endif %}
                     {% if member.next %}
-                        <b>Next: {{ member.next }}</b><br>
+                        <b>Next: {{ member.next | escape }}</b><br>
                     {% endif %}
                 </p>
             </div>
@@ -180,7 +180,7 @@ categories:
                         {{ member.notes }}<br> 
                     {% endif %}
                     {% if member.next %}
-                        <b>Next: {{ member.next }}</b><br>
+                        <b>Next: {{ member.next | escape }}</b><br>
                     {% endif %}
                 </p>
             </div>
@@ -208,7 +208,7 @@ categories:
                         {{ member.notes }}<br> 
                     {% endif %}
                     {% if member.next %}
-                        <b>Next: {{ member.next }}</b><br>
+                        <b>Next: {{ member.next | escape }}</b><br>
                     {% endif %}
                 </p>
             </div>
