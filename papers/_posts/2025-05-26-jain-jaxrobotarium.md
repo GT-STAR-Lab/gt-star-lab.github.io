@@ -16,7 +16,7 @@ ref: Jain et al., Preprint, 2025.
 
 arxiv: 2505.06771
 
-github: JaxRobotarium
+github: GT-STAR-Lab/JaxRobotarium
 
 ---
 
