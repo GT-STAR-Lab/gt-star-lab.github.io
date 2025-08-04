@@ -10,9 +10,9 @@ authors: Shalin Jain, Jiazhen Liu, Siva Kailas, Harish Ravichandar
 
 year: 2025
 
-journal: Preprint
+journal: Conference on Robot Learning (CoRL)
 
-ref: Jain et al., Preprint, 2025.
+ref: Jain et al., CoRL, 2025.
 
 arxiv: 2505.06771
 
