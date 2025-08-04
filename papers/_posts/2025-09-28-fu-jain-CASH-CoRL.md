@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: Capability-Aware Shared Hypernetworks for Flexible Heterogeneous Multi-Robot Coordination
+title: Capability-Aware Shared Hypernetworks for Flexible Heterogeneous Multi-Robot Coordination
 image: /papers/images/2025-fu-jain-CASH.png
 authors: Kevin Fu*, Shalin Jain*, Pierce Howell, Harish Ravichandar<br/>(* equal contribution)
 year: 2025
