@@ -1,21 +1,12 @@
 ---
-
 layout: paper
-
 title: JaxRobotarium&#58; Training and Deploying Multi-Robot Policies in 10 Minutes
-
 image: /papers/images/2025-jain-jaxrobotarium.png
-
 authors: Shalin Jain, Jiazhen Liu, Siva Kailas, Harish Ravichandar
-
 year: 2025
-
 journal: Conference on Robot Learning (CoRL)
-
 ref: Jain et al., CoRL, 2025.
-
 arxiv: 2505.06771
-
 github: GT-STAR-Lab/JaxRobotarium
 
 ---

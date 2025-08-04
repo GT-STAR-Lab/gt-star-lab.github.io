@@ -2,9 +2,9 @@
 layout: paper
 title: Q-ITAGS&#58; Quality-Optimized Spatio-Temporal Heterogeneous Task Allocation with a Time Budget
 image: /papers/images/liu-qitags.png
-authors: Glen Neville*, Jiazhen Liu*, Sonia Chernova, and Harish Ravichandar<br />(* equal contribution)
+authors: Jiazhen Liu*, Glen Neville*, Sonia Chernova, and Harish Ravichandar<br />(* equal contribution)
 year: 2024
-ref: Neville et al., ISRR 2024.
+ref: Liu, Neville et al., ISRR 2024.
 journal: "International Symposium of Robotics Research (ISRR)"
 arxiv: 2404.07902
 github: GT-STAR-Lab/Q-ITAGS

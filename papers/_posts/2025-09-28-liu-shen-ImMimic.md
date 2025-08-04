@@ -1,21 +1,11 @@
 ---
-
 layout: paper
-
 title: ImMimic&#58; Cross-Domain Imitation from Human Videos via Mapping and Interpolation
-
 image: /papers/images/2025-fu-jain-CASH.png
-
 authors: Yangcen Liu*, Woo Chul Shin*, Yunhai Han, Zhenyang Chen, Harish Ravichandar, Danfei Xu<br/>(* equal contribution)
-
 year: 2025
-
 ref: Liu, Shin et al., CoRL 2025.
-
 journal: Conference on Robot Learning (CoRL)
-
-github: coming soon
-
 supplement: https://sites.google.com/view/immimic
 
 ---
