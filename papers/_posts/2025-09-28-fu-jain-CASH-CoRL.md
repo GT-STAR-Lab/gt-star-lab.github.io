@@ -10,7 +10,9 @@ arxiv: 2501.06058
 github: GT-STAR-Lab/CASH
 
 ---
-
+<div style="text-align:center; margin: 2em 0;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/huDaaiKijQI" title="CASH video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 ## TL;DR
 
 CASH is a parsimonious hypernetwork-based policy architecture for coordinating heterogeneous teams. CASH can both encode shared decision making strategies and also flexibly adapt to individual and collective capabilities and context.
