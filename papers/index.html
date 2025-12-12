@@ -21,26 +21,52 @@ You can find open-source code associated with the papers below in our lab's <a h
       <h1>Preprints</h1>
       <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
     </div>
-  </div>
   <div class="row">
     {% for paper in preprints %}
-      <div class="col-lg-4 paperbox">
+      <div class="col-md-12 paperbox">
         <div class="media">
+          {% if paper.image %}
+          <img class="align-self-start mr-3" src="{{ paper.image | absolute_url }}" alt="{{ paper.title }}" style="width:100px; height:auto;">
+          {% endif %}
           <div class="media-body">
-            <div class="smallhead mb-1"><a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a></div>
-            <p style="font-weight: bold;" class="note">{{ paper.ref }}</p>
+            <div class="smallhead mb-1">
+              <a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a>
+            </div>
+            <p style="font-weight: normal;" class="note">
+              {% assign author_list = paper.authors | split: "<" | first | split: ", " %}
+              {% for author in author_list %}
+                {% assign clean_author = author | replace: "*", "" | replace: "<br/>", "" | strip %}
+                {% assign team_member = site.categories.team | where: "title", clean_author | first %}
+                {% if team_member %}
+                  <a href="{{ team_member.url | absolute_url }}" style="text-decoration: underline; color: inherit;">{{ author }}</a>
+                {% else %}
+                  {{ author }}
+                {% endif %}
+                {% unless forloop.last %}<span>,</span>{% endunless %}
+              {% endfor %}
+            </p>
+            <p style="font-weight: bold;" class="note">{{ paper.journal }}, {{ paper.year }}.</p>
+            <div class="icons">
+              {% if paper.arxiv %}
+              <a href="https://arxiv.org/abs/{{ paper.arxiv }}" class="icon-link">
+                <i class="fa fa-external-link fa-fw"></i> arXiv
+              </a>
+              {% endif %} 
+              {% if paper.pdf %}
+              <a href="{{ paper.pdf | absolute_url }}" class="icon-link">
+                <i class="fa fa-file-pdf-o fa-fw"></i> PDF
+              </a>
+              {% endif %} 
+              {% if paper.github %}
+              <a href="http://github.com/{{ paper.github }}" class="icon-link">
+                <i class="fa fa-github-alt fa-fw"></i> GitHub
+              </a>
+              {% endif %} 
+            </div>
           </div>
-          <a href="{{ paper.url }}">
-            <img class="ml-3" width=100 class="media-object" src="{{ paper.image | absolute_url }}">
-          </a>
         </div>
         <div class="bigspacer"></div>
-        <div class="spacer"></div>
       </div>
-      {% assign mod = forloop.index0 | plus: 1 | modulo: 3 %}
-      {% if mod == 0 and forloop.last == false %}
-        </div><div class="row">
-      {% endif %}
     {% endfor %}
   </div>
 {% endif %}
@@ -56,29 +82,53 @@ You can find open-source code associated with the papers below in our lab's <a h
       <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
     </div>
   </div>
-  <div class="row">
+   <div class="row">
     {% assign papers_in_year = papers | where: "year", year | reverse %}
-    {% assign col_count = 0 %}
     {% for paper in papers_in_year %}
-      <div class="col-lg-4 paperbox">
+      <div class="col-md-12 paperbox">
         <div class="media">
+          {% if paper.image %}
+          <img class="align-self-start mr-3" src="{{ paper.image | absolute_url }}" alt="{{ paper.title }}" style="width:100px; height:auto;">
+          {% endif %}
           <div class="media-body">
-            <div class="smallhead mb-1"><a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a></div>
-            <p style="font-weight: bold;" class="note">{{ paper.ref }}</p>
+            <div class="smallhead mb-1">
+              <a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a>
+            </div>
+            <p style="font-weight: normal;" class="note">
+              {% assign author_list = paper.authors | split: "<" | first | split: ", " %}
+              {% for author in author_list %}
+                {% assign clean_author = author | replace: "*", "" | replace: "<br/>", "" | strip %}
+                {% assign team_member = site.categories.team | where: "title", clean_author | first %}
+                {% if team_member %}
+                  <a href="{{ team_member.url | absolute_url }}" style="text-decoration: underline; color: inherit;">{{ author }}</a>
+                {% else %}
+                  {{ author }}
+                {% endif %}
+                {% unless forloop.last %}<span>,</span>{% endunless %}
+              {% endfor %}
+            </p>
+            <p style="font-weight: bold;" class="note">{{ paper.journal }}, {{ paper.year }}.</p>
+            <div class="icons">
+              {% if paper.arxiv %}
+              <a href="https://arxiv.org/abs/{{ paper.arxiv }}" class="icon-link">
+                <i class="fa fa-external-link fa-fw"></i> arXiv
+              </a>
+              {% endif %}
+              {% if paper.pdf %}
+              <a href="{{ paper.pdf | absolute_url }}" class="icon-link">
+                <i class="fa fa-file-pdf-o fa-fw"></i> PDF
+              </a>
+              {% endif %} 
+              {% if paper.github %}
+              <a href="http://github.com/{{ paper.github }}" class="icon-link">
+                <i class="fa fa-github-alt fa-fw"></i> GitHub
+              </a>
+              {% endif %}
+            </div>
           </div>
-          <a href="{{ paper.url }}">
-            <img class="ml-3" width=100 class="media-object" src="{{ paper.image | absolute_url }}">
-          </a>
         </div>
         <div class="bigspacer"></div>
-        <div class="spacer"></div>
       </div>
-      {% assign col_count = col_count | plus: 1 %}
-      {% if col_count == 3 %}
-        </div>
-        <div class="row">
-        {% assign col_count = 0 %}
-      {% endif %}
     {% endfor %}
-    </div>
+  </div>
 {% endfor %}
