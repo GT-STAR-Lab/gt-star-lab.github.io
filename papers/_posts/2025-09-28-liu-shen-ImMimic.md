@@ -7,6 +7,7 @@ year: 2025
 ref: Liu, Shin et al., CoRL 2025 (Oral).
 journal: Conference on Robot Learning (CoRL) - Oral
 supplement: https://sites.google.com/view/immimic
+github: GaTech-RL2/ImMimic-CoRL2025
 ---
 
 ## Abstract
