@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Distributionally Robust Control via Stein Variational Inference for Contact-Rich Manipulation
-image: /papers/images/sathyanarayan-SV-DRO.png
+image: /papers/images/sathyanarayan-SV-DRO.jpg
 authors: Hrishikesh Sathyanarayan, Victor Vantilborgh, Harish Ravichandar, Tom Lefebvre, Ian Abraham
 year: 2026
 ref: Sathyanarayan et al., RSS 2026.
