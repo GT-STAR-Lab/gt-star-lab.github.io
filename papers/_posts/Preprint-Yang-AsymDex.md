@@ -12,7 +12,7 @@ year: 2025
 
 journal: Preprint
 
-ref: Yang et al., Preprint, 2025.
+ref: Yang et al., Preprint.
 
 supplement: https://sites.google.com/view/asymdex-2025/
 
