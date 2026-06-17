@@ -4,8 +4,8 @@ title: Improving VLA Workspace Randomization Robustness for Industrial Pick-and-
 image: /papers/images/2026-kailas-jain-VLA-robustness.png
 authors: Siva Kailas*, Shalin Jain*, Harish Ravichandar<br />(* equal contribution)
 year: 2026
-ref: "Kailas, Jain et al., CVPR EAI (Oral) & CASE 2026."
-journal: CVPR Embodied AI Workshop (Oral Spotlight), and International Conference on Automation Science and Engineering (CASE)
+ref: "Kailas, Jain et al., CVPR EAI 2026 (Oral)."
+journal: CVPR Embodied AI Workshop (Oral Spotlight)
 
 ---
 
