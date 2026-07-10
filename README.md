@@ -11,14 +11,23 @@ Adapted from [bedford.io](http://bedford.io/)
 
 ## Editing the website
 
-Create a pull request to make any changes to the lab website. Please do not push directly to main.
+Create a pull request for website changes; please do not push directly to `main`.
+
+### Previewing locally
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+Open `http://localhost:4000`. Generated directories such as `_site` and `.sass-cache` are ignored and should not be committed.
 
 ### Adding a new lab member
 
 1. Create a new branch or fork the repo
-2. Add a markdown file with your details here: https://github.com/GT-STAR-Lab/gt-star-lab.github.io/tree/main/team/_posts
-   - Use existing lab memebers' files as a template.
-3. Add a picture of yourself here: https://github.com/GT-STAR-Lab/gt-star-lab.github.io/tree/main/team/_posts. 
+2. Add a Markdown file with your details in [`team/_posts`](team/_posts).
+   - Use an existing lab member's file as a template.
+3. Add a square profile picture to [`team/images`](team/images).
    - Make sure that your picture has a 1:1 (square) aspect ratio.
 4. Follow file naming conventions (see existing files for examples).
 5. Create a pull request
@@ -26,8 +35,8 @@ Create a pull request to make any changes to the lab website. Please do not push
 ### Adding a new publication
 
 1. Create a new branch or fork the repo
-2. Add a markdown file for the paper here: https://github.com/GT-STAR-Lab/gt-star-lab.github.io/tree/main/papers/_posts
-3. Add a representative picture here: https://github.com/GT-STAR-Lab/gt-star-lab.github.io/tree/main/papers/images
+2. Add a Markdown file for the paper in [`papers/_posts`](papers/_posts).
+3. Add a representative image to [`papers/images`](papers/images).
 4. Follow file naming conventions (see existing files for examples).
 5. Create a pull request
 

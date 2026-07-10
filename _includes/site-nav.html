@@ -1,0 +1,40 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-light bg-navbar" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.short_title }} home">
+        <img src="{{ '/images/logo-navbar-transparent.png' | relative_url }}" alt="{{ site.short_title }}">
+      </a>
+
+      <div class="navbar-controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch color theme">
+          <span class="theme-toggle__moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6a8.5 8.5 0 1 0 11.6 11.6Z"></path>
+            </svg>
+          </span>
+          <span class="theme-toggle__sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+          </span>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="primaryNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link{% if page.categories.first == 'team' %} active{% endif %}" href="{{ '/team/' | relative_url }}"{% if page.categories.first == 'team' %} aria-current="page"{% endif %}>Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.categories.first == 'papers' %} active{% endif %}" href="{{ '/papers/' | relative_url }}"{% if page.categories.first == 'papers' %} aria-current="page"{% endif %}>Papers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

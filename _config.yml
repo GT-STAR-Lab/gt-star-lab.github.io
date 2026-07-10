@@ -1,5 +1,7 @@
+title: Structured Techniques for Algorithmic Robotics (STAR) Lab
+short_title: STAR Lab
 name: Structured Techniques for Algorithmic Robotics (STAR) Lab
-description: Updates from the STAR lab at Georgia Tech
+description: The STAR Lab at Georgia Tech develops structured computational and learning frameworks for reliable, efficient, and generalizable robots.
 url: https://gt-star-lab.github.io
 baseurl: ""
 
@@ -8,8 +10,7 @@ permalink: /:categories/:title/
 future: true
 sass:
   sass_dir: css
-
-plugins: ['jekyll-twitter-plugin']
+  style: compressed
 
 exclude:
   - "*.branches"
@@ -40,6 +41,9 @@ exclude:
   - "*.txt"
   - "*.xml"
   - "*.zip"
+  - ".jekyll-cache"
+  - ".sass-cache"
+  - "_site"
   - "Gemfile"
   - "Gemfile.lock"
   - "*.DS_Store"

@@ -1,0 +1,53 @@
+{% assign paper = include.paper %}
+<article class="paper-card">
+  {% if paper.image %}
+    <a href="{{ paper.url | relative_url }}" aria-label="Read about {{ paper.title }}">
+      <img class="paper-card__image" src="{{ paper.image | relative_url }}" alt="Preview for {{ paper.title }}" width="160" height="112" loading="lazy" decoding="async">
+    </a>
+  {% endif %}
+  <div class="paper-card__body">
+    <h3><a href="{{ paper.url | relative_url }}" class="off">{{ paper.title }}</a></h3>
+    <p class="paper-card__authors">
+      {% assign author_list = paper.authors | split: '<' | first | split: ', ' %}
+      {% for author in author_list %}
+        {% assign clean_author = author | replace: '*', '' | replace: '<br/>', '' | strip %}
+        {% assign team_member = site.categories.team | where: 'title', clean_author | first %}
+        {% if team_member %}<a href="{{ team_member.url | relative_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    <p class="paper-card__venue"><strong>{{ paper.journal }}</strong>, {{ paper.year }}.</p>
+
+    {% assign pdf_value = paper.pdf | downcase | strip %}
+    {% assign github_value = paper.github | downcase | strip %}
+    {% assign has_pdf = false %}
+    {% unless pdf_value == '' or pdf_value contains 'coming soon' or pdf_value contains 'comming soon' %}
+      {% assign has_pdf = true %}
+    {% endunless %}
+    {% assign has_github = false %}
+    {% unless github_value == '' or github_value contains 'coming soon' or github_value contains 'comming soon' %}
+      {% assign has_github = true %}
+    {% endunless %}
+
+    {% if paper.arxiv or has_pdf or has_github or paper.supplement %}
+      <div class="resource-links" aria-label="Resources for {{ paper.title }}">
+        {% if paper.arxiv %}
+          <a href="https://arxiv.org/abs/{{ paper.arxiv }}" class="resource-link"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> arXiv</a>
+        {% endif %}
+        {% if has_pdf %}
+          <a href="{{ paper.pdf | relative_url }}" class="resource-link"><i class="fa fa-file-pdf-o fa-fw" aria-hidden="true"></i> PDF</a>
+        {% endif %}
+        {% if has_github %}
+          {% if paper.github contains '://' %}
+            {% assign github_url = paper.github %}
+          {% else %}
+            {% assign github_url = 'https://github.com/' | append: paper.github %}
+          {% endif %}
+          <a href="{{ github_url }}" class="resource-link"><i class="fa fa-github-alt fa-fw" aria-hidden="true"></i> GitHub</a>
+        {% endif %}
+        {% if paper.supplement %}
+          <a href="{{ paper.supplement }}" class="resource-link"><i class="fa fa-globe fa-fw" aria-hidden="true"></i> Project</a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>

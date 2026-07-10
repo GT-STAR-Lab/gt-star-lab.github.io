@@ -1,135 +1,54 @@
 ---
 layout: default
-title: STAR Lab / papers
+title: Papers
+description: Publications and preprints from the STAR Lab at Georgia Tech.
 categories:
- - papers
+  - papers
 ---
 
-<div class="note">
-For a more comprehensive list, please check out <a href="https://scholar.google.com/citations?user=d2HP6SMAAAAJ&hl=en">Harish's Google Scholar page</a>.
-</div>
+<header class="page-header">
+  <p class="eyebrow">Research</p>
+  <h1>Papers</h1>
+  <p>
+    Browse our publications below. For a comprehensive list, visit
+    <a href="https://scholar.google.com/citations?user=d2HP6SMAAAAJ&amp;hl=en">Harish Ravichandar's Google Scholar profile</a>,
+    and find associated open-source projects on the <a href="https://github.com/GT-STAR-Lab">STAR Lab GitHub organization</a>.
+  </p>
+</header>
 
-<div class="note">
-You can find open-source code associated with the papers below in our lab's <a href="https://github.com/GT-STAR-Lab">Github profile</a>.
-</div>
-
-<!-- Preprints Section -->
-{% assign preprints = site.categories.papers | where: "journal", "Preprint" %}
+{% assign preprints = site.categories.papers | where: 'journal', 'Preprint' %}
 {% if preprints.size > 0 %}
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Preprints</h1>
-      <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
+  <section class="paper-year" aria-labelledby="preprints-heading">
+    <div class="section-heading">
+      <h2 id="preprints-heading">Preprints</h2>
     </div>
-  </div>
-  <div class="row">
-    {% for paper in preprints %}
-      <div class="col-md-12 paperbox">
-        <div class="media">
-          {% if paper.image %}
-          <img class="align-self-start mr-3" src="{{ paper.image | absolute_url }}" alt="{{ paper.title }}" style="width:100px; height:auto;">
-          {% endif %}
-          <div class="media-body">
-            <div class="smallhead mb-1">
-              <a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a>
-            </div>
-            <p style="font-weight: normal;" class="note">
-              {% assign author_list = paper.authors | split: "<" | first | split: ", " %}
-              {% for author in author_list %}
-                {% assign clean_author = author | replace: "*", "" | replace: "<br/>", "" | strip %}
-                {% assign team_member = site.categories.team | where: "title", clean_author | first %}
-                {% if team_member %}
-                  <a href="{{ team_member.url | absolute_url }}" style="text-decoration: underline; color: inherit;">{{ author }}</a>
-                {% else %}
-                  {{ author }}
-                {% endif %}
-                {% unless forloop.last %}<span>,</span>{% endunless %}
-              {% endfor %}
-            </p>
-            <p style="font-weight: bold;" class="note">{{ paper.journal }}, {{ paper.year }}.</p>
-            <div class="icons">
-              {% if paper.arxiv %}
-              <a href="https://arxiv.org/abs/{{ paper.arxiv }}" class="icon-link">
-                <i class="fa fa-external-link fa-fw"></i> arXiv
-              </a>
-              {% endif %} 
-              {% if paper.pdf %}
-              <a href="{{ paper.pdf | absolute_url }}" class="icon-link">
-                <i class="fa fa-file-pdf-o fa-fw"></i> PDF
-              </a>
-              {% endif %} 
-              {% if paper.github %}
-              <a href="http://github.com/{{ paper.github }}" class="icon-link">
-                <i class="fa fa-github-alt fa-fw"></i> GitHub
-              </a>
-              {% endif %} 
-            </div>
-          </div>
-        </div>
-        <div class="bigspacer"></div>
-      </div>
-    {% endfor %}
-  </div>
+    <div class="paper-list">
+      {% for paper in preprints %}
+        {% include paper-card.html paper=paper %}
+      {% endfor %}
+    </div>
+  </section>
 {% endif %}
 
-<!-- Published papers loop (reversed within each year) -->
-{% assign papers = site.categories.papers | where_exp: "item", "item.journal != 'Preprint'" | sort: "year" | reverse %}
-
-{% assign years = papers | map: "year" | uniq %}
+{% assign years = site.categories.papers | map: 'year' | uniq | sort | reverse %}
 {% for year in years %}
-  <div class="row">
-    <div class="col-md-12">
-      <h1>{{ year }}</h1>
-      <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
-    </div>
-  </div>
-   <div class="row">
-    {% assign papers_in_year = papers | where: "year", year | reverse %}
+  {% assign papers_in_year = site.categories.papers | where: 'year', year | reverse %}
+  {% capture published_cards %}
     {% for paper in papers_in_year %}
-      <div class="col-md-12 paperbox">
-        <div class="media">
-          {% if paper.image %}
-          <img class="align-self-start mr-3" src="{{ paper.image | absolute_url }}" alt="{{ paper.title }}" style="width:100px; height:auto;">
-          {% endif %}
-          <div class="media-body">
-            <div class="smallhead mb-1">
-              <a href="{{ paper.url | absolute_url }}" class="off">{{ paper.title }}</a>
-            </div>
-            <p style="font-weight: normal;" class="note">
-              {% assign author_list = paper.authors | split: "<" | first | split: ", " %}
-              {% for author in author_list %}
-                {% assign clean_author = author | replace: "*", "" | replace: "<br/>", "" | strip %}
-                {% assign team_member = site.categories.team | where: "title", clean_author | first %}
-                {% if team_member %}
-                  <a href="{{ team_member.url | absolute_url }}" style="text-decoration: underline; color: inherit;">{{ author }}</a>
-                {% else %}
-                  {{ author }}
-                {% endif %}
-                {% unless forloop.last %}<span>,</span>{% endunless %}
-              {% endfor %}
-            </p>
-            <p style="font-weight: bold;" class="note">{{ paper.journal }}, {{ paper.year }}.</p>
-            <div class="icons">
-              {% if paper.arxiv %}
-              <a href="https://arxiv.org/abs/{{ paper.arxiv }}" class="icon-link">
-                <i class="fa fa-external-link fa-fw"></i> arXiv
-              </a>
-              {% endif %}
-              {% if paper.pdf %}
-              <a href="{{ paper.pdf | absolute_url }}" class="icon-link">
-                <i class="fa fa-file-pdf-o fa-fw"></i> PDF
-              </a>
-              {% endif %} 
-              {% if paper.github %}
-              <a href="http://github.com/{{ paper.github }}" class="icon-link">
-                <i class="fa fa-github-alt fa-fw"></i> GitHub
-              </a>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-        <div class="bigspacer"></div>
-      </div>
+      {% if paper.journal != 'Preprint' %}
+        {% include paper-card.html paper=paper %}
+      {% endif %}
     {% endfor %}
-  </div>
+  {% endcapture %}
+  {% assign rendered_published_cards = published_cards | strip %}
+  {% if rendered_published_cards != '' %}
+    <section class="paper-year" aria-labelledby="year-{{ year }}">
+      <div class="section-heading">
+        <h2 id="year-{{ year }}">{{ year }}</h2>
+      </div>
+      <div class="paper-list">
+        {{ published_cards }}
+      </div>
+    </section>
+  {% endif %}
 {% endfor %}

@@ -1,0 +1,17 @@
+{% assign member = include.member %}
+<article class="member-card{% unless include.show_image %} member-card--compact{% endunless %}">
+  {% if include.show_image and member.image %}
+    <a href="{{ member.url | relative_url }}" aria-label="View {{ member.title }}'s profile">
+      <img class="member-card__portrait" src="{{ member.image | relative_url }}" alt="{{ member.title }}" width="160" height="160" loading="lazy" decoding="async">
+    </a>
+  {% endif %}
+  <div class="member-card__content">
+    <h3><a href="{{ member.url | relative_url }}" class="off">{{ member.title }}</a></h3>
+    <p>
+      {{ member.position }}
+      {% if member.coadvised == true %}<br>Co-advised with {{ member.coadvisor }}{% endif %}
+      {% if member.note == true %}<br>{{ member.notes }}{% endif %}
+      {% if member.next-position %}<br><strong>Next: {{ member.next-position | escape }}</strong>{% endif %}
+    </p>
+  </div>
+</article>

@@ -1,0 +1,29 @@
+{% assign cohort = include.cohort %}
+{% assign group = include.group %}
+{% assign members = site.categories.team %}
+{% if cohort.reverse %}
+  {% assign members = members | reverse %}
+{% endif %}
+
+{% capture member_cards %}
+  {% for member in members %}
+    {% assign member_value = member[group.field] %}
+    {% if member_value == group.value %}
+      {% if cohort.alumni == true and member.alumni == true %}
+        {% include member-card.html member=member show_image=cohort.show_images %}
+      {% elsif cohort.alumni != true and member.alumni != true %}
+        {% include member-card.html member=member show_image=cohort.show_images %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign rendered_cards = member_cards | strip %}
+{% if rendered_cards != '' %}
+  <section class="team-group" aria-labelledby="{{ group.slug }}">
+    <h3 class="team-group__title" id="{{ group.slug }}">{{ group.title }}</h3>
+    <div class="member-grid">
+      {{ member_cards }}
+    </div>
+  </section>
+{% endif %}

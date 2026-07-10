@@ -276,12 +276,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  execjs
   github-pages (= 219)
-  jekyll-twitter-plugin
-  netrc
-  octokit
-  rdiscount
 
 BUNDLED WITH
    2.1.4

@@ -2,64 +2,59 @@
 layout: default
 ---
 
-<div class="row align-items-start">
-  <div class="col-lg-3">
-    {% if page.image %}
-    <img class="img-fluid mb-3" style="max-width:100%;height:auto;" src="{{ page.image | absolute_url }}">
-    {% endif %}
-    <div class="glyphbox note mt-4">
-      {% if page.pdf %}
-      <div class="smallhead">PDF</div>
-      <div class="pad-left note">
-        <div class="smallspacer"></div>
-        <i class="fa fa-file-text-o fa-fw"></i>
-        <a class="off" href="{{ page.pdf | absolute_url }}"> {{ page.ref }}</a>
-      </div>
-      <div class="bigspacer"></div>
+<article>
+  <header class="publication-header">
+    <p class="eyebrow">Publication</p>
+    <h1>{{ page.title }}</h1>
+    <p class="publication-header__authors">{{ page.authors }}</p>
+    <p class="publication-header__venue">{{ page.journal }}, {{ page.year }}.</p>
+  </header>
+
+  <div class="publication-layout">
+    <aside class="publication-sidebar" aria-label="Publication preview and resources">
+      {% if page.image %}
+        <img class="publication-image" src="{{ page.image | relative_url }}" alt="Preview for {{ page.title }}">
       {% endif %}
-      {% if page.supplement %}
-      <div class="smallhead">Website</div>
-      <div class="pad-left note">
-        <div class="smallspacer"></div>
-        <i class="fa fa-globe fa-fw"></i>
-        <a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
-      </div>
-      <div class="bigspacer"></div>
+
+      {% assign pdf_value = page.pdf | downcase | strip %}
+      {% assign github_value = page.github | downcase | strip %}
+      {% assign has_pdf = false %}
+      {% unless pdf_value == '' or pdf_value contains 'coming soon' or pdf_value contains 'comming soon' %}
+        {% assign has_pdf = true %}
+      {% endunless %}
+      {% assign has_github = false %}
+      {% unless github_value == '' or github_value contains 'coming soon' or github_value contains 'comming soon' %}
+        {% assign has_github = true %}
+      {% endunless %}
+
+      {% if has_pdf or page.supplement or page.arxiv or has_github %}
+        <div class="publication-resources">
+          <h2>Resources</h2>
+          <div class="resource-links">
+            {% if has_pdf %}
+              <a class="resource-link" href="{{ page.pdf | relative_url }}"><i class="fa fa-file-pdf-o fa-fw" aria-hidden="true"></i> PDF</a>
+            {% endif %}
+            {% if page.supplement %}
+              <a class="resource-link" href="{{ page.supplement }}"><i class="fa fa-globe fa-fw" aria-hidden="true"></i> Project website</a>
+            {% endif %}
+            {% if page.arxiv %}
+              <a class="resource-link" href="https://arxiv.org/abs/{{ page.arxiv }}"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i> arXiv {{ page.arxiv }}</a>
+            {% endif %}
+            {% if has_github %}
+              {% if page.github contains '://' %}
+                {% assign github_url = page.github %}
+              {% else %}
+                {% assign github_url = 'https://github.com/' | append: page.github %}
+              {% endif %}
+              <a class="resource-link" href="{{ github_url }}"><i class="fa fa-github-alt fa-fw" aria-hidden="true"></i> GitHub</a>
+            {% endif %}
+          </div>
+        </div>
       {% endif %}
-      {% if page.arxiv %}
-      <div class="smallhead">arXiv</div>
-      <div class="pad-left note">
-        <div class="smallspacer"></div>
-        <i class="fa fa-external-link fa-fw"></i>
-        <a class="off" href="https://arxiv.org/abs/{{ page.arxiv }}">{{ page.arxiv }}</a>
-      </div>
-      <div class="bigspacer"></div>
-      {% endif %}
-      {% if page.github %}
-      <div class="smallhead">GitHub</div>
-      <div class="pad-left note">
-        <div class="smallspacer"></div>
-        <i class="fa fa-github-alt fa-fw"></i>
-        <a class="off" href="http://github.com/{{ page.github }}">{{ page.github }}</a>
-      </div>
-      <div class="bigspacer"></div>
-      {% endif %}
-    </div>
-  </div>
-  <div class="col-lg-9">
-    <div class="titlebox">
-      <div class="head">
-        {{ page.title }}
-      </div>
-      <div class="smallhead">
-        <p style="font-weight: bold;">{{ page.authors }}</p>
-        <p style="font-style: italic;">{{ page.journal }}, {{ page.year }}.</p>
-      </div>
-    </div>
-    <div class="note mt-4">
+    </aside>
+
+    <div class="publication-body">
       {{ content }}
     </div>
   </div>
-</div>
-
-<div class="bigspacer"></div>
+</article>

@@ -1,0 +1,41 @@
+- title: Current members
+  slug: current-members
+  alumni: false
+  reverse: true
+  show_images: true
+  groups:
+    - title: Faculty
+      slug: faculty
+      field: level
+      value: faculty
+    - title: PhD students
+      slug: phd-students
+      field: position
+      value: PhD Student
+    - title: MS students
+      slug: ms-students
+      field: position
+      value: MS Student
+    - title: Undergraduate students
+      slug: undergraduate-students
+      field: position
+      value: BS Student
+
+- title: Alumni
+  slug: alumni
+  alumni: true
+  reverse: false
+  show_images: false
+  groups:
+    - title: PhD alumni
+      slug: phd-alumni
+      field: position
+      value: PhD Student
+    - title: MS alumni
+      slug: ms-alumni
+      field: position
+      value: MS Student
+    - title: Undergraduate alumni
+      slug: undergraduate-alumni
+      field: position
+      value: BS Student
