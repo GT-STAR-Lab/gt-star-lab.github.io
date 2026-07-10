@@ -1,7 +1,7 @@
 {% assign paper = include.paper %}
 <article class="paper-card">
   {% if paper.image %}
-    <a href="{{ paper.url | relative_url }}" aria-label="Read about {{ paper.title }}">
+    <a class="paper-card__image-link" href="{{ paper.url | relative_url }}" aria-label="Read about {{ paper.title }}">
       <img class="paper-card__image" src="{{ paper.image | relative_url }}" alt="Preview for {{ paper.title }}" width="160" height="112" loading="lazy" decoding="async">
     </a>
   {% endif %}

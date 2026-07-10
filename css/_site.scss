@@ -507,14 +507,23 @@ section + .paper-year {
   box-shadow: var(--shadow-card);
 }
 
-.paper-card__image {
+.paper-card__image-link {
+  display: flex;
   width: 9.5rem;
-  height: 6.75rem;
+  aspect-ratio: 10 / 7;
   flex: 0 0 9.5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 0.45rem;
-  object-fit: contain;
   background: #ffffff;
+}
+
+.paper-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .paper-card__body {
@@ -853,10 +862,10 @@ table {
     display: block;
   }
 
-  .paper-card__image {
+  .paper-card__image-link {
     width: 100%;
     height: auto;
-    max-height: 12rem;
+    max-height: none;
     margin-bottom: 1rem;
   }
 
