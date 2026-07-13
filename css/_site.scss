@@ -340,6 +340,92 @@ html[data-theme="dark"] .home-hero__logo {
   line-height: 1.75;
 }
 
+.research-overview {
+  max-width: 72rem;
+  margin: 0 auto clamp(3rem, 7vw, 5rem);
+}
+
+.research-overview__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.research-overview__intro h2 {
+  margin-bottom: 0.75rem;
+}
+
+.research-overview__lede {
+  max-width: 50rem;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+}
+
+.research-statement-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  background: var(--color-heading);
+  box-shadow: var(--shadow-card);
+  color: var(--color-bg);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.research-statement-cta:hover {
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+.research-statement-cta .fa {
+  font-size: 1.25rem;
+}
+
+.research-statement-cta__meta {
+  display: block;
+  margin-top: 0.2rem;
+  opacity: 0.72;
+  font-size: 0.74rem;
+  font-weight: 500;
+}
+
+.research-overview__figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.research-overview__figure-link {
+  display: block;
+  padding: clamp(0.65rem, 2vw, 1.1rem);
+  cursor: zoom-in;
+}
+
+.research-overview__figure-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-overview__figure figcaption {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 .home-callout {
   max-width: 62rem;
   margin: 0 auto clamp(3rem, 7vw, 5rem);
@@ -826,6 +912,14 @@ table {
     align-items: flex-start;
   }
 
+  .research-overview__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .research-statement-cta {
+    justify-self: start;
+  }
+
   .profile-layout,
   .publication-layout {
     grid-template-columns: 1fr;
@@ -848,6 +942,11 @@ table {
 
   .navbar-brand {
     width: min(10rem, 46vw);
+  }
+
+  .research-statement-cta {
+    width: 100%;
+    justify-content: center;
   }
 
   .profile-header {

@@ -8,6 +8,7 @@ github: harishravichandar
 scholar: d2HP6SMAAAAJ
 image: /team/images/harish-ravichandar.jpg
 cv: https://harishravichandar.com/cv/
+research_statement: /team/pdfs/harish-ravichandar-research-statement-2026.pdf
 website: https://harishravichandar.com/
 email: harish.ravichandar@cc.gatech.edu
 ---

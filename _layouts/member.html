@@ -21,12 +21,15 @@ layout: default
   </header>
 
   <div class="profile-layout">
-    {% if member.cv or member.twitter or member.github or member.scholar or member.calendar or member.website or member.email %}
+    {% if member.cv or member.research_statement or member.twitter or member.github or member.scholar or member.calendar or member.website or member.email %}
       <aside class="profile-links" aria-labelledby="profile-links-heading">
         <h2 id="profile-links-heading">Links &amp; contact</h2>
         <ul>
           {% if member.cv %}
             <li><i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i> <a href="{{ member.cv | relative_url }}">CV</a></li>
+          {% endif %}
+          {% if member.research_statement %}
+            <li><i class="fa fa-file-pdf-o fa-fw" aria-hidden="true"></i> <a href="{{ member.research_statement | relative_url }}">Research statement (PDF)</a></li>
           {% endif %}
           {% if member.twitter %}
             <li><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> <a href="https://twitter.com/{{ member.twitter }}">@{{ member.twitter }}</a></li>
