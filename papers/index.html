@@ -16,23 +16,49 @@ categories:
   </p>
 </header>
 
+<div class="paper-search" role="search">
+  <label class="paper-search__label" for="paper-search-input">Search papers</label>
+  <div class="paper-search__field">
+    <i class="fa fa-search paper-search__icon" aria-hidden="true"></i>
+    <input
+      id="paper-search-input"
+      class="paper-search__input"
+      type="search"
+      placeholder="Search titles, authors, venues, abstracts, and more"
+      autocomplete="off"
+      aria-describedby="paper-search-help paper-search-status"
+    >
+    <button class="paper-search__clear" type="button" aria-label="Clear paper search" hidden>
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="paper-search__meta">
+    <p id="paper-search-help">Searches the full text and metadata for every paper.</p>
+    <p id="paper-search-status" class="paper-search__status" aria-live="polite"></p>
+  </div>
+</div>
+
 {% assign preprints = site.categories.papers | where: 'journal', 'Preprint' %}
 {% if preprints.size > 0 %}
-  <section class="paper-year" aria-labelledby="preprints-heading">
-    <div class="section-heading">
-      <h2 id="preprints-heading">Preprints</h2>
-    </div>
+  <details class="paper-year" data-paper-section data-default-open="false">
+    <summary class="section-heading paper-year__summary">
+      <span class="paper-year__title" id="preprints-heading" role="heading" aria-level="2">Preprints</span>
+      <span class="paper-year__count" aria-hidden="true">{{ preprints.size }}</span>
+      <i class="fa fa-chevron-down paper-year__chevron" aria-hidden="true"></i>
+    </summary>
     <div class="paper-list">
       {% for paper in preprints %}
         {% include paper-card.html paper=paper %}
       {% endfor %}
     </div>
-  </section>
+  </details>
 {% endif %}
 
 {% assign years = site.categories.papers | map: 'year' | uniq | sort | reverse %}
 {% for year in years %}
   {% assign papers_in_year = site.categories.papers | where: 'year', year | reverse %}
+  {% assign preprints_in_year = papers_in_year | where: 'journal', 'Preprint' %}
+  {% assign published_count = papers_in_year.size | minus: preprints_in_year.size %}
   {% capture published_cards %}
     {% for paper in papers_in_year %}
       {% if paper.journal != 'Preprint' %}
@@ -42,13 +68,17 @@ categories:
   {% endcapture %}
   {% assign rendered_published_cards = published_cards | strip %}
   {% if rendered_published_cards != '' %}
-    <section class="paper-year" aria-labelledby="year-{{ year }}">
-      <div class="section-heading">
-        <h2 id="year-{{ year }}">{{ year }}</h2>
-      </div>
+    <details class="paper-year" data-paper-section data-default-open="true" open>
+      <summary class="section-heading paper-year__summary">
+        <span class="paper-year__title" id="year-{{ year }}" role="heading" aria-level="2">{{ year }}</span>
+        <span class="paper-year__count" aria-hidden="true">{{ published_count }}</span>
+        <i class="fa fa-chevron-down paper-year__chevron" aria-hidden="true"></i>
+      </summary>
       <div class="paper-list">
         {{ published_cards }}
       </div>
-    </section>
+    </details>
   {% endif %}
 {% endfor %}
+
+<script src="{{ '/js/papers.js' | relative_url }}" defer></script>

@@ -1,5 +1,18 @@
 {% assign paper = include.paper %}
-<article class="paper-card">
+{% capture paper_search_text %}
+  {{ paper.title }}
+  {{ paper.authors }}
+  {{ paper.journal }}
+  {{ paper.year }}
+  {{ paper.ref }}
+  {{ paper.arxiv }}
+  {{ paper.pdf }}
+  {{ paper.github }}
+  {{ paper.supplement }}
+  {{ paper.url }}
+  {{ paper.content | strip_html }}
+{% endcapture %}
+<article class="paper-card" data-paper-card data-search="{{ paper_search_text | normalize_whitespace | downcase | escape }}">
   {% if paper.image %}
     <a class="paper-card__image-link" href="{{ paper.url | relative_url }}" aria-label="Read about {{ paper.title }}">
       <img class="paper-card__image" src="{{ paper.image | relative_url }}" alt="Preview for {{ paper.title }}" width="160" height="112" loading="lazy" decoding="async">
