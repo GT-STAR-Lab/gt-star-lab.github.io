@@ -345,20 +345,8 @@ html[data-theme="dark"] .home-hero__logo {
   margin: 0 auto clamp(3rem, 7vw, 5rem);
 }
 
-.research-overview__intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.research-overview__intro h2 {
-  margin-bottom: 0.75rem;
-}
-
 .research-overview__lede {
-  max-width: 50rem;
+  max-width: 56rem;
   margin: 0;
   color: var(--color-text-muted);
   font-size: 1.02rem;
@@ -368,6 +356,7 @@ html[data-theme="dark"] .home-hero__logo {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
+  margin-top: 1rem;
   padding: 0.85rem 1rem;
   border-radius: 0.65rem;
   background: var(--color-heading);
@@ -397,7 +386,7 @@ html[data-theme="dark"] .home-hero__logo {
 }
 
 .research-overview__figure {
-  margin: 0;
+  margin: 1.5rem 0 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 0.75rem;
@@ -910,14 +899,6 @@ table {
 
   .profile-header {
     align-items: flex-start;
-  }
-
-  .research-overview__intro {
-    grid-template-columns: 1fr;
-  }
-
-  .research-statement-cta {
-    justify-self: start;
   }
 
   .profile-layout,
