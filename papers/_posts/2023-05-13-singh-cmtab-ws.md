@@ -7,7 +7,6 @@ year: 2023
 ref: Singh et al., ARMS WS, AAMAS 2023.
 journal: "Workshop on Autonomous Robots and Multirobot Systems (ARMS), Autonomous Agents and Multi-Agent Systems (AAMAS)"
 github: GT-STAR-Lab/CMTAB
-pdf: coming soon
 ---
 
 ## Abstract

@@ -14,14 +14,14 @@ layout: default
       <h1>{{ member.title }}</h1>
       <p class="profile-header__meta">
         {{ member.position }}
-        {% if member.coadvised == true %}<br>Co-advised with {{ member.coadvisor }}{% endif %}
-        {% if member.note == true %}<br>{{ member.notes }}{% endif %}
+        {% if member.co_advised == true %}<br>Co-advised with {{ member.co_advisor }}{% endif %}
+        {% if member.note %}<br>{{ member.note }}{% endif %}
       </p>
     </div>
   </header>
 
   <div class="profile-layout">
-    {% if member.cv or member.research_statement or member.twitter or member.github or member.scholar or member.calendar or member.website or member.email %}
+    {% if member.cv or member.research_statement or member.twitter or member.github or member.scholar or member.calendar or member.website or member.linkedin or member.email %}
       <aside class="profile-links" aria-labelledby="profile-links-heading">
         <h2 id="profile-links-heading">Links &amp; contact</h2>
         <ul>
@@ -45,6 +45,9 @@ layout: default
           {% endif %}
           {% if member.website %}
             <li><i class="fa fa-globe fa-fw" aria-hidden="true"></i> <a href="{{ member.website }}">Website</a></li>
+          {% endif %}
+          {% if member.linkedin %}
+            <li><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i> <a href="{{ member.linkedin }}">LinkedIn</a></li>
           {% endif %}
           {% if member.email %}
             {% assign email_parts = member.email | split: '@' %}

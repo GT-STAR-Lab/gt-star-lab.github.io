@@ -2,13 +2,13 @@
 layout: member
 title: Glen Neville
 level: grad
-coadvised: true
-coadvisor: Sonia Chernova
+co_advised: true
+co_advisor: Sonia Chernova
 position: PhD Student
 scholar: BRnL4_gAAAAJ
 image: /team/images/glen-neville.png
-website: https://www.linkedin.com/in/glenneville/
+linkedin: https://www.linkedin.com/in/glenneville/
 alumni: true
-next-position: Zoox
+next_position: Zoox
 ---
 

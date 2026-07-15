@@ -4,10 +4,10 @@ title: Sukriti Singh
 level: grad
 position: MS Student
 image: /team/images/sukriti-singh.jpg
-website: https://www.linkedin.com/in/sukritisingh1221/
+linkedin: https://www.linkedin.com/in/sukritisingh1221/
 github: singh-sukriti
 alumni: true
-next-position: Schlumberger
+next_position: Schlumberger
 ---
 
 

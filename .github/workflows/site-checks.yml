@@ -1,0 +1,43 @@
+name: Website checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      JEKYLL_ENV: production
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Ruby and dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Validate paper and member content
+        run: bundle exec ruby scripts/validate_content.rb
+
+      - name: Build website
+        run: bundle exec jekyll build --trace
+
+      - name: Validate generated pages and local links
+        run: bundle exec ruby scripts/validate_site.rb _site

@@ -6,7 +6,6 @@ authors: Oscar Jed Chuy*, Hritik Sapra*, Xiang Zhi Tan*, Harish Ravichandar, Son
 year: 2023
 ref: Chuy et al., RO-MAN 2023.
 journal: "IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)"
-pdf: coming soon
 ---
 
 ## Abstract

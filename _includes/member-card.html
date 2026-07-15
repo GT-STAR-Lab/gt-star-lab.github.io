@@ -9,9 +9,9 @@
     <h3><a href="{{ member.url | relative_url }}" class="off">{{ member.title }}</a></h3>
     <p>
       {{ member.position }}
-      {% if member.coadvised == true %}<br>Co-advised with {{ member.coadvisor }}{% endif %}
-      {% if member.note == true %}<br>{{ member.notes }}{% endif %}
-      {% if member.next-position %}<br><strong>Next: {{ member.next-position | escape }}</strong>{% endif %}
+      {% if member.co_advised == true %}<br>Co-advised with {{ member.co_advisor }}{% endif %}
+      {% if member.note %}<br>{{ member.note }}{% endif %}
+      {% if member.next_position %}<br><strong>Next: {{ member.next_position | escape }}</strong>{% endif %}
     </p>
   </div>
 </article>

@@ -1,0 +1,21 @@
+{
+  "name": "STAR Lab website",
+  "image": "mcr.microsoft.com/devcontainers/ruby:1-3.3-bookworm",
+  "postCreateCommand": "bash scripts/setup-preview.sh",
+  "postStartCommand": "bash scripts/start-preview.sh",
+  "forwardPorts": [4000],
+  "portsAttributes": {
+    "4000": {
+      "label": "STAR Lab website",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true
+      }
+    }
+  }
+}

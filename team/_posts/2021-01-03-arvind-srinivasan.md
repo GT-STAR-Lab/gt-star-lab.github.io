@@ -5,7 +5,7 @@ level: grad
 position: MS Student
 image: /team/images/buzz.jpg
 alumni: true
-next-position: Microsoft
+next_position: Microsoft
 ---
 
 Arvind is now with Microsoft.

@@ -3,8 +3,8 @@ layout: member
 title: Andrew Wong
 level: grad
 position: PhD Student
-coadvised: true
-coadvisor: Frank Dellaert
+co_advised: true
+co_advisor: Frank Dellaert
 image: /team/images/andrew-wong.png
 github: TingWeiWong
 ---
