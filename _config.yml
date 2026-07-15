@@ -52,4 +52,5 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "scripts"
+  - "vendor"
   - "*.DS_Store"
