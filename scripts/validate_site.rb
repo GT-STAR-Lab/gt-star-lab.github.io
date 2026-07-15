@@ -93,8 +93,12 @@ class SiteChecker
 
     return if value.start_with?("//") || value.match?(/\A[a-z][a-z0-9+.-]*:/i)
 
-    path_and_query, fragment = value.split("#", 2)
-    raw_path = path_and_query.split("?", 2).first
+    path_and_query, fragment_separator, fragment = value.partition("#")
+    fragment = nil if fragment_separator.empty?
+    # Fragment-only and query-only references have no path component. Treat
+    # them as references to the current document instead of passing nil to
+    # URI::Parser#unescape.
+    raw_path = path_and_query.partition("?").first
     decoded_path = URI::DEFAULT_PARSER.unescape(raw_path)
 
     target = if decoded_path.empty?
@@ -122,7 +126,7 @@ class SiteChecker
     end
 
     validate_fragment(source, target, fragment, value) if fragment && !fragment.empty?
-  rescue URI::InvalidURIError
+  rescue URI::InvalidURIError, ArgumentError, EncodingError
     add_error(source, "invalid local #{attribute}: #{value.inspect}")
   end
 

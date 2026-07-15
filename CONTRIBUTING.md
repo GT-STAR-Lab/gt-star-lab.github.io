@@ -59,11 +59,12 @@ Open `http://localhost:4000`. The container setup is recommended on Windows beca
 
 ```sh
 bundle exec ruby scripts/validate_content.rb
+bundle exec ruby scripts/test_validate_site.rb
 bundle exec jekyll build --trace
 bundle exec ruby scripts/validate_site.rb _site
 ```
 
-The first command reports the exact content file and field that needs attention. The final command checks generated page structure, image descriptions, accessibility references, and local links.
+The first command reports the exact content file and field that needs attention. The second protects the generated-site checker against known edge cases. The final command checks generated page structure, image descriptions, accessibility references, and local links.
 
 ## Pull request checklist
 

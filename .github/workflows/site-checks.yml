@@ -36,6 +36,9 @@ jobs:
       - name: Validate paper and member content
         run: bundle exec ruby scripts/validate_content.rb
 
+      - name: Test generated-site validator
+        run: bundle exec ruby scripts/test_validate_site.rb
+
       - name: Build website
         run: bundle exec jekyll build --trace
 
