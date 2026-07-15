@@ -6,9 +6,8 @@ authors: Hrishikesh Sathyanarayan, Victor Vantilborgh, Harish Ravichandar, Tom L
 year: 2026
 ref: Sathyanarayan et al., RSS 2026.
 journal: "Robotics: Science and Systems (RSS)"
-github: 
-pdf: 
-arxiv: 
+github: ialab-yale/stein-variational-dro
+arxiv: 2605.19029
 ---
 
 ## Abstract

@@ -7,6 +7,7 @@ year: 2026
 ref: Kim et al., IROS 2026.
 journal: International Conference on Intelligent Robots and Systems (IROS)
 arxiv: "2409.14736"
+supplement: https://kooploco.github.io/
 
 ---
 

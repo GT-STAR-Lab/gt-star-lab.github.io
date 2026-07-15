@@ -1,23 +1,14 @@
 ---
-
 layout: paper
-
 title: Video2Sim2Real&#58; Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video
-
 image: /papers/images/han-qiu-vid2sim2real.png
-
 authors: Yunhai Han*, Jianuo Qiu*, Linhao Bai, Ziyu Xiao, Zihang Zeng, Yangcen Liu, Zhaodong Yang, Shalin Jain, Wenrui Ma, Jiaqi Fu, Yuqian Zheng, Manisha Natarajan, Muhammad Zubair Irshad, Kenneth Shaw, Matthew Gombolay, Zsolt Kira*, Harish Ravichandar*<br />(* equal contribution)
-
 year: 2026
-
 journal: Preprint
-
 ref: Han, Qiu et al., Preprint.
-
 arxiv: "2606.08828"
-
 supplement: https://video2sim2real.github.io/
-
+github: video2sim2real/video2sim2real
 ---
 
 ## TL;DR
