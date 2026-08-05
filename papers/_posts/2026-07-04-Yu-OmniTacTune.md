@@ -5,7 +5,7 @@ image: /papers/images/2026-yu-omnitactune.png
 authors: Kelin Yu*, Haode Zhang*, Harish Ravichandar, Yunhai Han, Ruohan Gao<br />(* equal contribution)
 year: 2026
 ref: Yu, Zhang et al., RSS Workshop 2026 (Oral Spotlight).
-journal: "Workshop on Tactile Sensing for Robotic Foundation Models, Robotics: Science and Systems (RSS) - Oral Spotlight"
+journal: "Workshop on Tactile Sensing for Robotic Foundation Models, Robotics: Science and Systems (RSS) - Best Paper Award" 
 arxiv: "2607.03723"
 supplement: https://colinyu1.github.io/omnitactune-site/
 ---
