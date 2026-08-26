@@ -7,6 +7,7 @@ image: /team/images/pratik-shah.jpg
 scholar: vVBrUpwAAAAJ
 github: shahpratik02
 alumni: true
+next_position: Amazon
 ---
 
 
