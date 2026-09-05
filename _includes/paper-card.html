@@ -3,6 +3,11 @@
   {{ paper.title }}
   {{ paper.authors }}
   {{ paper.journal }}
+  {% for venue in paper.additional_venues %}
+    {{ venue.name }}
+    {{ venue.year }}
+    {{ venue.note }}
+  {% endfor %}
   {{ paper.year }}
   {{ paper.ref }}
   {{ paper.arxiv }}
@@ -28,7 +33,13 @@
         {% if team_member %}<a href="{{ team_member.url | relative_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}
     </p>
-    <p class="paper-card__venue"><strong>{{ paper.journal }}</strong>, {{ paper.year }}.</p>
+    <p class="paper-card__venue">
+      <strong>{{ paper.journal }}</strong>, {{ paper.year }}.
+      {% for venue in paper.additional_venues %}
+        <br>
+        <strong>{{ venue.name }}</strong>{% if venue.year %}, {{ venue.year }}{% endif %}{% if venue.note %} — {{ venue.note }}{% endif %}.
+      {% endfor %}
+    </p>
 
     {% assign pdf_value = paper.pdf | downcase | strip %}
     {% assign github_value = paper.github | downcase | strip %}

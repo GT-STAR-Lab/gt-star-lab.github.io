@@ -7,7 +7,13 @@ layout: default
     <p class="eyebrow">Publication</p>
     <h1>{{ page.title }}</h1>
     <p class="publication-header__authors">{{ page.authors }}</p>
-    <p class="publication-header__venue">{{ page.journal }}, {{ page.year }}.</p>
+    <p class="publication-header__venue">
+      {{ page.journal }}, {{ page.year }}.
+      {% for venue in page.additional_venues %}
+        <br>
+        {{ venue.name }}{% if venue.year %}, {{ venue.year }}{% endif %}{% if venue.note %} — {{ venue.note }}{% endif %}.
+      {% endfor %}
+    </p>
   </header>
 
   <div class="publication-layout">
