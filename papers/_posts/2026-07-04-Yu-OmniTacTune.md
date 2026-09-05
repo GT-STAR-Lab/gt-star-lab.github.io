@@ -5,7 +5,6 @@ image: /papers/images/2026-yu-omnitactune.png
 authors: Kelin Yu*, Haode Zhang*, Harish Ravichandar, Yunhai Han, Ruohan Gao<br />(* equal contribution)
 year: 2026
 ref: Yu, Zhang et al., CoRL 2026.
-journal: journal: "Conference on Robot Learning (CoRL)"
 journal: "Conference on Robot Learning (CoRL)"
 additional_venues:
   - name: "Workshop on Tactile Sensing for Robotic Foundation Models, Robotics: Science and Systems (RSS)"
