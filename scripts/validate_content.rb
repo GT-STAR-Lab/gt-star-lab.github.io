@@ -21,7 +21,7 @@ SCHEMAS = {
   "paper" => {
     directory: ROOT.join("papers", "_posts"),
     required: %w[layout title image authors year ref journal],
-    allowed: %w[layout title image authors year ref journal arxiv pdf github supplement permalink]
+    allowed: %w[layout title image authors year ref journal additional_venues arxiv pdf github supplement permalink]
   },
   "member" => {
     directory: ROOT.join("team", "_posts"),
@@ -169,6 +169,49 @@ class ContentChecker
   def validate_paper(path, data)
     year = data["year"].to_s
     add_error(path, "year must contain four digits") unless year.match?(/\A\d{4}\z/)
+
+    additional_venues = data["additional_venues"]
+    if additional_venues
+      unless additional_venues.is_a?(Array)
+        add_error(path, "additional_venues must be a list")
+      else
+        additional_venues.each_with_index do |venue, index|
+          unless venue.is_a?(Hash)
+            add_error(path, "additional_venues[#{index}] must be a key-value map")
+            next
+          end
+
+          venue = venue.transform_keys(&:to_s)
+
+          unknown = venue.keys - %w[name year note]
+          unless unknown.empty?
+            add_error(
+              path,
+              "additional_venues[#{index}] has unknown field(s): #{unknown.sort.join(', ')}"
+            )
+          end
+
+          if venue["name"].to_s.strip.empty?
+            add_error(path, "additional_venues[#{index}] requires name")
+          end
+
+          if venue.key?("year") &&
+            !venue["year"].to_s.match?(/\A\d{4}\z/)
+            add_error(
+              path,
+              "additional_venues[#{index}].year must contain four digits"
+            )
+          end
+
+          if venue.key?("note") && !venue["note"].is_a?(String)
+            add_error(
+              path,
+              "additional_venues[#{index}].note must be a text value"
+            )
+          end
+        end
+      end
+    end
 
     arxiv = data["arxiv"]&.to_s
     if arxiv && !arxiv.empty? && !arxiv.match?(/\A\d{4}\.\d{4,5}(?:v\d+)?\z/)
