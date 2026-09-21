@@ -40,7 +40,7 @@ categories:
 
 {% assign preprints = site.categories.papers | where: 'journal', 'Preprint' %}
 {% if preprints.size > 0 %}
-  <details class="paper-year" data-paper-section data-default-open="false">
+  <details class="paper-year" data-paper-section data-default-open="true">
     <summary class="section-heading paper-year__summary">
       <span class="paper-year__title" id="preprints-heading" role="heading" aria-level="2">Preprints</span>
       <span class="paper-year__count" aria-hidden="true">{{ preprints.size }}</span>
