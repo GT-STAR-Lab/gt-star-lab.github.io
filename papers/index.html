@@ -38,9 +38,9 @@ categories:
   </div>
 </div>
 
-{% assign preprints = site.categories.papers | where: 'journal', 'Preprint' %}
+{% assign preprints = site.categories.papers | where: 'journal', 'Preprint' | sort: 'date' | reverse %}
 {% if preprints.size > 0 %}
-  <details class="paper-year" data-paper-section data-default-open="true">
+  <details class="paper-year" data-paper-section data-default-open="true" data-preprint-limit="4" open>
     <summary class="section-heading paper-year__summary">
       <span class="paper-year__title" id="preprints-heading" role="heading" aria-level="2">Preprints</span>
       <span class="paper-year__count" aria-hidden="true">{{ preprints.size }}</span>
@@ -51,6 +51,11 @@ categories:
         {% include paper-card.html paper=paper %}
       {% endfor %}
     </div>
+    {% if preprints.size > 4 %}
+      <div class="preprint-more" data-preprint-more hidden>
+        <button class="preprint-more__button" type="button" data-preprint-toggle aria-expanded="false">See more</button>
+      </div>
+    {% endif %}
   </details>
 {% endif %}
 
